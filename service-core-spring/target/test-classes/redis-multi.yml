@@ -1,0 +1,17 @@
+test:
+  a: abcdefg
+spring:
+  redis:
+    multi:
+      db1:
+        host: 192.168.1.244
+        database: 12
+        luttuce:
+          pool:
+            maxActive: 1000
+      db2:
+        host: 192.168.1.244
+        database: 13
+        luttuce:
+          pool:
+            maxActive: 2000

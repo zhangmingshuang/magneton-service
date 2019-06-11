@@ -1,0 +1,7 @@
+com\magneton\service\core\spring\defence\RedisRequestDefenceTest.class
+com\magneton\service\core\spring\defence\RequestDefenceConfigurationTest.class
+com\magneton\service\core\spring\redis\MultiRedisDatasourceTest.class
+com\magneton\service\core\spring\ConcurrentTest$Test.class
+com\magneton\service\core\spring\TestApplication.class
+com\magneton\service\core\spring\ConcurrentTest.class
+com\magneton\service\core\spring\ConcurrentTest$1.class

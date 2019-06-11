@@ -1,0 +1,12 @@
+H:\javaprojects\magneton-service\service-core-spring\src\main\java\com\magneton\service\core\spring\redis\MultiRedisConnectionConfiguration.java
+H:\javaprojects\magneton-service\service-core-spring\src\main\java\com\magneton\service\core\spring\YamlPropertySourceFactory.java
+H:\javaprojects\magneton-service\service-core-spring\src\main\java\com\magneton\service\core\spring\scan\ReverseComponentScanner.java
+H:\javaprojects\magneton-service\service-core-spring\src\main\java\com\magneton\service\core\spring\defence\RedisRequestDefence.java
+H:\javaprojects\magneton-service\service-core-spring\src\main\java\com\magneton\service\core\spring\defence\RequestDefenceProperties.java
+H:\javaprojects\magneton-service\service-core-spring\src\main\java\com\magneton\service\core\spring\redis\LettuceRedisProperties.java
+H:\javaprojects\magneton-service\service-core-spring\src\main\java\com\magneton\service\core\spring\redis\MultiRedisProperties.java
+H:\javaprojects\magneton-service\service-core-spring\src\main\java\com\magneton\service\core\spring\defence\RequestDefenceConfiguration.java
+H:\javaprojects\magneton-service\service-core-spring\src\main\java\com\magneton\service\core\spring\redis\MultiRedisAutoConfiguration.java
+H:\javaprojects\magneton-service\service-core-spring\src\main\java\com\magneton\service\core\spring\scan\ReverseComponentScan.java
+H:\javaprojects\magneton-service\service-core-spring\src\main\java\com\magneton\service\core\spring\redis\MultiLettuceConnectionConfiguration.java
+H:\javaprojects\magneton-service\service-core-spring\src\main\java\com\magneton\service\core\spring\redis\MultiRedisTemplateFactory.java
