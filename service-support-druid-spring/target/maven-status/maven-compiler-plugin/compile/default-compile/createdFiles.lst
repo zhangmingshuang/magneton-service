@@ -1,5 +1,0 @@
-com\magneton\service\support\druid\DruidAutoConfiguration.class
-com\magneton\service\support\druid\util\DataUtils.class
-com\magneton\service\support\druid\MybatisConfiguration.class
-com\magneton\service\support\druid\MybatisPropertiesSupport.class
-com\magneton\service\support\druid\DruidProperties.class

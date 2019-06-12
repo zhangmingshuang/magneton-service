@@ -90,15 +90,12 @@ public class DefaultHttpRequestSignature implements Signature {
         for (int i = required.length - 1; i > 0; --i) {
             String key = required[i];
             if (!parameterMap.containsKey(key)) {
+                if (log) {
+                    LOGGER.info("必须参数{}不存在", key);
+                }
                 return false;
             }
         }
-        if (exclude != null) {
-            for (String e : exclude) {
-                parameterMap.remove(e);
-            }
-        }
-        parameterMap.remove(sign);
         String requestSign = this.sign(parameterMap);
         if (!s.equals(requestSign)) {
             if (log) {
@@ -141,9 +138,13 @@ public class DefaultHttpRequestSignature implements Signature {
     public String signContent(Map<String, String[]> parameterMap) {
         ArrayList<String> keys = new ArrayList(parameterMap.keySet());
         Collections.sort(keys);
+
         StringBuilder content = new StringBuilder();
         for (int i = 0, s = keys.size(); i < s; ++i) {
             String k = keys.get(i);
+            if (this.isSkip(k)) {
+                continue;
+            }
             String v = getString(parameterMap, k);
             if (v == null || v.length() < 1) {
                 continue;
@@ -158,6 +159,23 @@ public class DefaultHttpRequestSignature implements Signature {
         return content.substring(0, content.length() - 1);
     }
 
+
+    public boolean isSkip(String key) {
+        if (key == null || key.length() < 1) {
+            return true;
+        }
+        if (sign.equals(key)) {
+            return true;
+        }
+        if (exclude != null) {
+            for (String e : exclude) {
+                if (e.equals(key)) {
+                    return true;
+                }
+            }
+        }
+        return false;
+    }
 
     private String getString(Map<String, String[]> parameterMap, String key) {
         String[] values = parameterMap.get(key);

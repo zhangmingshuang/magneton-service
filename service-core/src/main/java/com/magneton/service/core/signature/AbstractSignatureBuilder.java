@@ -4,7 +4,7 @@ package com.magneton.service.core.signature;
  * @author zhangmingshuang
  * @since 2019/6/11
  */
-public abstract class AbstractSignatureBuilder {
+public abstract class AbstractSignatureBuilder<T> {
 
     /**
      * Http请求的时间字段名称
@@ -71,7 +71,7 @@ public abstract class AbstractSignatureBuilder {
         return this;
     }
 
-    public abstract Object build();
+    public abstract T build();
 
 
     public String getTime() {
