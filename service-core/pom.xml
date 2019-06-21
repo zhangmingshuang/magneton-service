@@ -46,12 +46,6 @@
             <version>4.12</version>
             <scope>test</scope>
         </dependency>
-        <!-- https://mvnrepository.com/artifact/org.springmodules/spring-modules-cache -->
-        <dependency>
-            <groupId>org.springmodules</groupId>
-            <artifactId>spring-modules-cache</artifactId>
-            <version>0.8</version>
-        </dependency>
 
     </dependencies>
 </project>
