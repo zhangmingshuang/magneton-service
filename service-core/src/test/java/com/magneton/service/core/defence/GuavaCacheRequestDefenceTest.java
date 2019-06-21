@@ -18,7 +18,7 @@ public class GuavaCacheRequestDefenceTest {
         config.setTokenNum(3);
         config.setRefreshTime(10);
         defence = new GuavaCacheRequestDefence();
-        defence.setRequestDefenceConfig(config);
+        defence.afterConfigSet(config);
     }
 
     @Test
@@ -30,6 +30,16 @@ public class GuavaCacheRequestDefenceTest {
     @Test
     public void testDecrAcquire() {
         long tokenNum = defence.decrAcquire("abc2");
+        Assert.assertTrue(tokenNum == 2);
+    }
+
+    @Test
+    public void testRemove() {
+        long tokenNum = defence.decrAcquire("abc3");
+        tokenNum = defence.decrAcquire("abc3");
+        Assert.assertTrue(tokenNum == 1);
+        defence.remote("abc3");
+        tokenNum = defence.decrAcquire("abc3");
         Assert.assertTrue(tokenNum == 2);
     }
 

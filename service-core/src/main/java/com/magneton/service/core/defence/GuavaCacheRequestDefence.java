@@ -3,12 +3,17 @@ package com.magneton.service.core.defence;
 import com.google.common.cache.CacheBuilder;
 import com.google.common.cache.CacheLoader;
 import com.google.common.cache.LoadingCache;
+import org.springmodules.cache.annotations.Cacheable;
 
 import java.util.concurrent.TimeUnit;
 import java.util.concurrent.atomic.AtomicInteger;
 
 /**
  * 基于GuavaCache的请求防御实现
+ * <p>
+ * 由于GuavaCache是基于本地内存实现的，可能会出现占用大量内容的情况发生
+ * 导致内存不足，如果在业务上会产生大量Key的时候，建议自己实现使用外部缓存
+ * 的实现，以避免内存空间不足导致的服务宕机
  *
  * @author zhangmingshuang
  * @since 2019/6/3
@@ -29,11 +34,11 @@ public class GuavaCacheRequestDefence implements RequestDefence {
     }
 
     @Override
-    public void setRequestDefenceConfig(RequestDefenceConfig config) {
+    public void afterConfigSet(RequestDefenceConfig config) {
         this.config = config;
         final Integer tokenNum = Integer.valueOf(config.getTokenNum());
         cache = CacheBuilder.newBuilder()
-                .maximumSize(1024)
+                .maximumSize(Integer.MAX_VALUE)
                 .expireAfterWrite(config.getRefreshTime(), TimeUnit.SECONDS)
                 .build(new CacheLoader<String, Def>() {
                     @Override
@@ -41,6 +46,11 @@ public class GuavaCacheRequestDefence implements RequestDefence {
                         return new Def(tokenNum, System.currentTimeMillis());
                     }
                 });
+    }
+
+    @Override
+    public void remote(String key) {
+        cache.invalidate(key);
     }
 
     @Override

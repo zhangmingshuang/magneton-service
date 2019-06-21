@@ -4,7 +4,6 @@ import org.springframework.dao.IncorrectResultSizeDataAccessException;
 import org.springframework.lang.Nullable;
 import org.springframework.util.CollectionUtils;
 
-import java.util.Collection;
 import java.util.List;
 
 /**

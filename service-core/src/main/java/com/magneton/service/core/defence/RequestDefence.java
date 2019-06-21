@@ -1,5 +1,7 @@
 package com.magneton.service.core.defence;
 
+import com.magneton.service.core.Configurable;
+
 /**
  * 请求防御
  * 定义一个请求防御的概念
@@ -9,14 +11,12 @@ package com.magneton.service.core.defence;
  * @author zhangmingshuang
  * @since 2019/6/3
  */
-public interface RequestDefence {
+public interface RequestDefence extends Configurable<RequestDefenceConfig> {
 
     enum Mode {
         LOCAL,
         DISTRIBUTED
     }
-
-    void setRequestDefenceConfig(RequestDefenceConfig config);
 
     /**
      * 获取防御的冷却时间， 如果时间大于0表示还处理防御机制中
@@ -36,5 +36,17 @@ public interface RequestDefence {
      */
     int decrAcquire(String key);
 
+    /**
+     * 删除令牌统计
+     *
+     * @param key Key
+     */
+    void remote(String key);
+
+    /**
+     * 返回模式信息
+     *
+     * @return {@link Mode}
+     */
     Mode mode();
 }

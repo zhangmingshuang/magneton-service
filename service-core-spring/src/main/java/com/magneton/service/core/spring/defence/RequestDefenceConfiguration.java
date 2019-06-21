@@ -21,7 +21,7 @@ public class RequestDefenceConfiguration {
     @ConditionalOnMissingBean(RequestDefence.class)
     public RequestDefence requestDefence(RequestDefenceProperties properties) {
         RequestDefence defence = new GuavaCacheRequestDefence();
-        defence.setRequestDefenceConfig(properties);
+        defence.afterConfigSet(properties);
         return defence;
     }
 
@@ -35,8 +35,7 @@ public class RequestDefenceConfiguration {
         } else {
             defence = new RedisRequestDefence(redisTemplate);
         }
-        defence.setRequestDefenceConfig(properties);
-        System.out.println("11111111:" + defence.mode());
+        defence.afterConfigSet(properties);
         return defence;
     }
 }

@@ -8,12 +8,15 @@ import org.springframework.boot.context.properties.ConfigurationProperties;
  * @author zhangmingshuang
  * @since 2019/6/4
  */
-@ConfigurationProperties(prefix = RequestDefenceProperties.PREFIX, ignoreInvalidFields = true)
+@ConfigurationProperties(
+        prefix = RequestDefenceProperties.PREFIX, ignoreInvalidFields = true)
 public class RequestDefenceProperties extends RequestDefenceConfig {
 
     public static final String PREFIX = "magneton.request.defence";
+
     public static final String MODE_LOCAL = "local";
     public static final String MODE_DISTRIBUTED = "distributed";
+
     /**
      * 防御节点类型
      * local 默认的。表示使用{@link com.magneton.service.core.defence.GuavaCacheRequestDefence}

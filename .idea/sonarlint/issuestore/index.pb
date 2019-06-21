@@ -82,3 +82,17 @@ fservice-core/src/main/java/com/magneton/service/core/signature/DefaultHttpServl
 Tservice-core/src/main/java/com/magneton/service/core/signature/TimeoutValidator.java,1\5\153b3743d18cdd4102fe71f91155811c3eaf15a0
 ‰
 Yservice-core/src/test/java/com/magneton/service/core/signuature/TimeoutValidatorTest.java,e\f\ef754089852b3bc87c284c65ca6f96ed1f4f2c55
+‘
+aservice-core/src/test/java/com/magneton/service/core/signuature/AbstractSignatureBuilderTest.java,1\e\1e661eca5d154a07171aa72109f6f6deca817674
+›
+kservice-core/src/test/java/com/magneton/service/core/signuature/DefaultHttpServletRequestSignatureTest.java,6\5\6555d714ca603993a63a9365b9bb15d727ba4acb
+—
+gservice-support-druid-spring/src/main/java/com/magneton/service/support/druid/MybatisConfiguration.java,9\3\93d7d46d6cd372843ca172bf7b35dfdcd59f8678
+›
+kservice-support-druid-spring/src/main/java/com/magneton/service/support/druid/MybatisPropertiesSupport.java,5\7\572bb325384d406709284e57f309f610fb1fd10a
+’
+bservice-support-druid-spring/src/main/java/com/magneton/service/support/druid/DruidProperties.java,5\d\5d5ca0263caee98addd16a63c2bc7a7aa6f7eb48
+™
+iservice-support-druid-spring/src/main/java/com/magneton/service/support/druid/DruidAutoConfiguration.java,3\d\3daf976ecc0c2d6a0f6dac388c02b41f562018d8
+‘
+aservice-support-druid-spring/src/main/java/com/magneton/service/support/druid/util/DataUtils.java,9\f\9f5f4b77e9ccf3f88e1be3f20fde05147f6550b8

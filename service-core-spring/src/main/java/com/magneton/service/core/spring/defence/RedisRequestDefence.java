@@ -19,7 +19,7 @@ public class RedisRequestDefence implements RequestDefence {
     }
 
     @Override
-    public void setRequestDefenceConfig(RequestDefenceConfig config) {
+    public void afterConfigSet(RequestDefenceConfig config) {
         this.config = config;
     }
 
@@ -44,6 +44,12 @@ public class RedisRequestDefence implements RequestDefence {
             }
             return -1L;
         });
+    }
+
+    @Override
+    public void remote(String key) {
+        byte[] k = key.getBytes();
+        redisTemplate.execute((RedisCallback) conn -> conn.del(k));
     }
 
     @Override
