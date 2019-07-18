@@ -128,6 +128,44 @@ public class DefaultTimesLimiter implements TimesLimiter {
     }
 
     @Override
+    public int[] remain(String key, String... rules) {
+        int[] remain = new int[rules.length];
+        Map<String, Limiter> keyLimit = limiters.get(key);
+        if (keyLimit == null) {
+            //规则还没有建立，以配置的规则为次数
+            for (int i = 0; i < rules.length; i++) {
+                String rule = rules[i];
+                LimiterRule limiterRule = config.getRules().get(rule);
+                if (limiterRule == null && config.isForce()) {
+                    limiterRule = config.getDefaultRule();
+                }
+                remain[i] = limiterRule == null ? -1 : limiterRule.getTimes();
+            }
+            return remain;
+        }
+        for (int i = 0; i < rules.length; i++) {
+            String rule = rules[i];
+            Limiter limiter = keyLimit.get(rule);
+            if (limiter == null) {
+                LimiterRule limiterRule = config.getRules().get(rule);
+                if (limiterRule == null && config.isForce()) {
+                    limiterRule = config.getDefaultRule();
+                }
+                remain[i] = limiterRule == null ? -1 : limiterRule.getTimes();
+            } else {
+                if (limiter.isNull()) {
+                    remain[i] = -1;
+                } else {
+                    int times = limiter.rule.getTimes() - limiter.times.intValue();
+                    remain[i] = times < 0 ? 0 : times;
+                }
+            }
+        }
+        return remain;
+    }
+
+
+    @Override
     public int remain(String key, String rule) {
         Map<String, Limiter> keyLimit = limiters.get(key);
         Limiter limiter;

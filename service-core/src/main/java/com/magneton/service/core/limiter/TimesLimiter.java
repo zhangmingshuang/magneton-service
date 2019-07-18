@@ -73,6 +73,8 @@ public interface TimesLimiter extends Configurable<TimesLimiterConfig> {
      */
     int remain(String key, String rule);
 
+    int[] remain(String key, String... rule);
+
     /**
      * 取得当前Key在多少秒之后过期
      *

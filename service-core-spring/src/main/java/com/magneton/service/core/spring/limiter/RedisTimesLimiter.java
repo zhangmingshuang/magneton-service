@@ -44,6 +44,15 @@ public class RedisTimesLimiter implements TimesLimiter {
     }
 
     @Override
+    public int[] remain(String key, String... rules) {
+        int[] remain = new int[rules.length];
+        for (int i = 0; i < rules.length; i++) {
+            remain[i] = this.remain(key, rules[i]);
+        }
+        return remain;
+    }
+
+    @Override
     public int remain(String key, String rule) {
         return (int) redisTemplate.execute((RedisCallback) conn -> {
             byte[] ks = (key + ":" + rule).getBytes();

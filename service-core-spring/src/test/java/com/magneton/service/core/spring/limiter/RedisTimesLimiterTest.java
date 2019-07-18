@@ -12,6 +12,7 @@ import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.data.redis.core.RedisTemplate;
 import org.springframework.test.context.junit4.SpringRunner;
 
+import java.util.Arrays;
 import java.util.HashMap;
 import java.util.Map;
 import java.util.concurrent.CountDownLatch;
@@ -47,9 +48,43 @@ public class RedisTimesLimiterTest {
 
     }
 
+    @Test
+    public void testRemainWithArray() {
+        Map<String, LimiterRule> rules = new HashMap<>();
+        LimiterRule secondsLimiterRule = new LimiterRule();
+        //3s
+        secondsLimiterRule.setExpireIn(3);
+        //3times
+        secondsLimiterRule.setTimes(3);
+
+        String testRemainWithArray = "testRemainWithArray";
+
+        rules.put(testRemainWithArray, secondsLimiterRule);
+
+        TimesLimiterConfig remainConfig = new TimesLimiterConfig();
+        remainConfig.setRules(rules);
+        remainConfig.setDefaultRule(secondsLimiterRule);
+
+        TimesLimiter limiter = new RedisTimesLimiter(redisTemplate);
+        limiter.afterConfigSet(remainConfig);
+
+        int[] tests = limiter.remain("test",
+                testRemainWithArray,
+                testRemainWithArray + "2",
+                testRemainWithArray + "3");
+        Assert.assertTrue(Arrays.equals(tests, new int[]{0, -1, -1}));
+        limiter.increase("test", testRemainWithArray + "2");
+
+        tests = limiter.remain("test",
+                testRemainWithArray,
+                testRemainWithArray + "2",
+                testRemainWithArray + "3");
+        System.out.println(Arrays.toString(tests));
+    }
+
 
     @Test
-    public void testIncreaseEx(){
+    public void testIncreaseEx() {
         Map<String, LimiterRule> rules = new HashMap<>();
         LimiterRule secondsLimiterRule = new LimiterRule();
         //3s
@@ -66,13 +101,13 @@ public class RedisTimesLimiterTest {
         TimesLimiter limiter = new RedisTimesLimiter(redisTemplate);
         limiter.afterConfigSet(remainConfig);
 
-        int incr = limiter.increaseEx("test","remain",4);
+        int incr = limiter.increaseEx("test", "remain", 4);
         System.out.println(incr);
-        Assert.assertFalse(limiter.increase("test","remain"));
+        Assert.assertFalse(limiter.increase("test", "remain"));
 
-        incr = limiter.increaseEx("test","remain2",4);
+        incr = limiter.increaseEx("test", "remain2", 4);
         System.out.println(incr);
-        Assert.assertFalse(limiter.increase("test","remain2"));
+        Assert.assertFalse(limiter.increase("test", "remain2"));
     }
 
     @Test
@@ -123,11 +158,11 @@ public class RedisTimesLimiterTest {
         remain = limiter.remain("testKey2", "remain2");
         Assert.assertTrue(remain == 3);
 
-        limiter.increase("testKey","remain");
+        limiter.increase("testKey", "remain");
         remain = limiter.remain("testKey", "remain");
         Assert.assertTrue(remain == 2);
 
-        limiter.increase("testKey","remain2");
+        limiter.increase("testKey", "remain2");
         remain = limiter.remain("testKey", "remain2");
         Assert.assertTrue(remain == -1);
     }

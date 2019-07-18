@@ -13,7 +13,7 @@ import java.util.concurrent.atomic.AtomicLong;
  * @author zhangmingshuang
  * @since 2019/6/21
  */
-public class DefaultTimesLimiterTest {
+public class DefaultTimesLimiterTest extends BasicTimesLimiterTest {
 
     private TimesLimiterConfig config;
     private String seconds = "seconds";
@@ -33,87 +33,27 @@ public class DefaultTimesLimiterTest {
     }
 
     @Test
-    public void testIncreaseEx(){
-        Map<String, LimiterRule> rules = new HashMap<>();
-        LimiterRule secondsLimiterRule = new LimiterRule();
-        //3s
-        secondsLimiterRule.setExpireIn(3);
-        //3times
-        secondsLimiterRule.setTimes(3);
-        rules.put("remain", secondsLimiterRule);
-
-        TimesLimiterConfig remainConfig = new TimesLimiterConfig();
-        remainConfig.setRules(rules);
-        remainConfig.setDefaultRule(secondsLimiterRule);
-        remainConfig.setForce(true);
-
-        TimesLimiter limiter = new DefaultTimesLimiter();
-        limiter.afterConfigSet(remainConfig);
-
-        int incr = limiter.increaseEx("test","remain",4);
-        System.out.println(incr);
-        Assert.assertFalse(limiter.increase("test","remain"));
-
-        incr = limiter.increaseEx("test","remain2",4);
-        System.out.println(incr);
-        Assert.assertFalse(limiter.increase("test","remain2"));
+    public void testIncreaseEx() {
+        TimesLimiter limiter = createDefaultTimesLimiter("testIncreaseEx");
+        super.testIncreaseEx("testIncreaseEx", limiter);
     }
 
     @Test
     public void testTtl() {
+        TimesLimiter limiter = createDefaultTimesLimiter("testTtl");
+        super.testTtl("testTtl", limiter);
+    }
 
-        Map<String, LimiterRule> rules = new HashMap<>();
-        LimiterRule secondsLimiterRule = new LimiterRule();
-        //3s
-        secondsLimiterRule.setExpireIn(3);
-        //3times
-        secondsLimiterRule.setTimes(3);
-        rules.put("remain", secondsLimiterRule);
-
-        TimesLimiterConfig remainConfig = new TimesLimiterConfig();
-        remainConfig.setRules(rules);
-        remainConfig.setDefaultRule(secondsLimiterRule);
-
-        TimesLimiter limiter = new DefaultTimesLimiter();
-        limiter.afterConfigSet(remainConfig);
-
-        Assert.assertEquals(limiter.ttl("test", "remain"), -1);
-        limiter.increase("test", "remain");
-        Assert.assertTrue(limiter.ttl("test", "remain") >= 2);
+    @Test
+    public void testRemainWithArray() {
+        TimesLimiter limiter = createDefaultTimesLimiter("testRemainWithArray");
+        super.testRemainWithArray("testRemainWithArray", limiter);
     }
 
     @Test
     public void testRemain() {
-        Map<String, LimiterRule> rules = new HashMap<>();
-        LimiterRule secondsLimiterRule = new LimiterRule();
-        //3s
-        secondsLimiterRule.setExpireIn(3);
-        //3times
-        secondsLimiterRule.setTimes(3);
-        rules.put("remain", secondsLimiterRule);
-
-        TimesLimiterConfig remainConfig = new TimesLimiterConfig();
-        remainConfig.setRules(rules);
-        remainConfig.setDefaultRule(secondsLimiterRule);
-
-        TimesLimiter limiter = new DefaultTimesLimiter();
-        limiter.afterConfigSet(remainConfig);
-        int remain = limiter.remain("testKey", "remain");
-        Assert.assertTrue(remain == 3);
-        remain = limiter.remain("testKey2", "remain");
-        Assert.assertTrue(remain == 3);
-        remain = limiter.remain("testKey", "remain2");
-        Assert.assertTrue(remain == 3);
-        remain = limiter.remain("testKey2", "remain2");
-        Assert.assertTrue(remain == 3);
-
-        limiter.increase("testKey", "remain");
-        remain = limiter.remain("testKey", "remain");
-        Assert.assertTrue(remain == 2);
-
-        limiter.increase("testKey", "remain2");
-        remain = limiter.remain("testKey", "remain2");
-        Assert.assertTrue(remain == -1);
+        TimesLimiter limiter = createDefaultTimesLimiter("testRemain");
+        super.testRemain("testRemain", limiter);
     }
 
     @Test
