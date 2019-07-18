@@ -64,6 +64,34 @@ public class RedisTimesLimiter implements TimesLimiter {
     }
 
     @Override
+    public int increaseEx(String key, String rule, int incr) {
+        return (int) redisTemplate.execute((RedisCallback) conn -> {
+            //判断的Key与规则不存在，获取规则
+            LimiterRule limiterRule = config.getRules().get(rule);
+            if (limiterRule == null) {
+                if (!config.isForce()) {
+                    return incr;
+                }
+                limiterRule = config.getDefaultRule();
+            }
+            byte[] ks = (key + ":" + rule).getBytes();
+            Boolean exists = conn.exists(ks);
+            if (exists == null || !exists.booleanValue()) {
+                Boolean setNx = conn.setNX(ks, (limiterRule.getTimes() + "").getBytes());
+                if (setNx != null && setNx.booleanValue()) {
+                    //设置成功
+                    conn.expire(ks, limiterRule.getExpireIn());
+                }
+            }
+            Long remainTimes = conn.decrBy(ks, incr);
+            if (remainTimes != null) {
+                return (int) (limiterRule.getTimes() - remainTimes.longValue());
+            }
+            return incr;
+        });
+    }
+
+    @Override
     public boolean increase(String key, String rule, int incr) {
         return (boolean) redisTemplate.execute((RedisCallback) conn -> {
             byte[] ks = (key + ":" + rule).getBytes();
@@ -83,7 +111,7 @@ public class RedisTimesLimiter implements TimesLimiter {
                     conn.expire(ks, limiterRule.getExpireIn());
                 }
             }
-            Long remainTimes = conn.decrBy(ks, 1);
+            Long remainTimes = conn.decrBy(ks, incr);
             if (remainTimes == null || remainTimes.longValue() < 0) {
                 return false;
             }

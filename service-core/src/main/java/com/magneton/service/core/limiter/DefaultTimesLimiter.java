@@ -4,6 +4,7 @@ import com.magneton.service.core.util.SegmentLocks;
 
 import java.util.*;
 import java.util.concurrent.ConcurrentHashMap;
+import java.util.concurrent.atomic.AtomicInteger;
 import java.util.concurrent.atomic.LongAdder;
 import java.util.concurrent.locks.ReentrantLock;
 
@@ -40,15 +41,15 @@ public class DefaultTimesLimiter implements TimesLimiter {
 
     public static class Limiter {
         private long createTime;
-        private LongAdder times;
+        private AtomicInteger times;
         private LimiterRule rule;
         private long expireIn;
 
         public Limiter(LimiterRule rule) {
             this.rule = rule;
+            this.times = new AtomicInteger(0);
+            this.createTime = System.currentTimeMillis();
             if (this.rule != null) {
-                this.times = new LongAdder();
-                this.createTime = System.currentTimeMillis();
                 this.expireIn = rule.getExpireIn() * 1000;
             }
         }
@@ -57,20 +58,30 @@ public class DefaultTimesLimiter implements TimesLimiter {
             return rule == null;
         }
 
-        public boolean increase() {
+        public int increaseEx(int incr) {
+            long timePast = System.currentTimeMillis() - createTime;
+            if (timePast >= expireIn) {
+                //限制过时了
+                createTime = System.currentTimeMillis();
+                times.set(incr);
+                return times.get();
+            }
+            return times.addAndGet(incr);
+        }
+
+        public boolean increase(int incr) {
             if (rule == null) {
                 return true;
             }
-            times.increment();
             int limit = rule.getTimes();
-            if (times.intValue() <= limit) {
+            if (times.addAndGet(incr) <= limit) {
                 return true;
             }
             long timePast = System.currentTimeMillis() - createTime;
             if (timePast >= expireIn) {
                 //限制过时了
                 createTime = System.currentTimeMillis();
-                times.reset();
+                times.set(incr);
                 return true;
             }
             return false;
@@ -137,7 +148,18 @@ public class DefaultTimesLimiter implements TimesLimiter {
     }
 
     @Override
+    public int increaseEx(String key, String rule, int incr) {
+        Limiter limiter = this.getLimiter(key, rule);
+        return limiter.increaseEx(incr);
+    }
+
+    @Override
     public boolean increase(String key, String rule, int incr) {
+        Limiter limiter = this.getLimiter(key, rule);
+        return limiter.increase(incr);
+    }
+
+    private Limiter getLimiter(String key, String rule) {
         Map<String, Limiter> keyLimit = limiters.get(key);
         if (keyLimit == null) {
             ReentrantLock lock = segmentLocks.getLock(key);
@@ -176,6 +198,8 @@ public class DefaultTimesLimiter implements TimesLimiter {
                 lock.unlock();
             }
         }
-        return limiter.increase();
+        return limiter;
     }
+
+
 }

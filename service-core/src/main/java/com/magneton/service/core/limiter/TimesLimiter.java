@@ -48,6 +48,21 @@ public interface TimesLimiter extends Configurable<TimesLimiterConfig> {
     boolean increase(String key, String rule, int incr);
 
     /**
+     * 直接增加统计
+     * 但是不对统计的结果进行校验
+     * 也就是不管是否超过限制的次数都不做逻辑操作
+     *
+     * @param key  Key
+     * @param rule 规则
+     * @return 返回增加之后的次数
+     */
+    default int increaseEx(String key, String rule) {
+        return this.increaseEx(key, rule, 1);
+    }
+
+    int increaseEx(String key, String rule, int incr);
+
+    /**
      * 取得剩余下的可使用次数
      *
      * @param key  Key

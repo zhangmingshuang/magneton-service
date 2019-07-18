@@ -2,12 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="acd58b7d-afc6-4f52-b046-7a64307bfedf" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/service-core-spring/src/main/java/com/magneton/service/core/spring/limiter/RedisTimesLimiter.java" beforeDir="false" afterPath="$PROJECT_DIR$/service-core-spring/src/main/java/com/magneton/service/core/spring/limiter/RedisTimesLimiter.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/service-core-spring/src/test/java/com/magneton/service/core/spring/limiter/RedisTimesLimiterTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/service-core-spring/src/test/java/com/magneton/service/core/spring/limiter/RedisTimesLimiterTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/service-core/src/main/java/com/magneton/service/core/limiter/DefaultTimesLimiter.java" beforeDir="false" afterPath="$PROJECT_DIR$/service-core/src/main/java/com/magneton/service/core/limiter/DefaultTimesLimiter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service-core/src/main/java/com/magneton/service/core/limiter/LimiterRule.java" beforeDir="false" afterPath="$PROJECT_DIR$/service-core/src/main/java/com/magneton/service/core/limiter/LimiterRule.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/service-core/src/main/java/com/magneton/service/core/limiter/TimesLimiter.java" beforeDir="false" afterPath="$PROJECT_DIR$/service-core/src/main/java/com/magneton/service/core/limiter/TimesLimiter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service-core/src/main/java/com/magneton/service/core/limiter/TimesLimiterConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/service-core/src/main/java/com/magneton/service/core/limiter/TimesLimiterConfig.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/service-core/src/test/java/com/magneton/service/core/limiter/DefaultTimesLimiterTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/service-core/src/test/java/com/magneton/service/core/limiter/DefaultTimesLimiterTest.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -50,8 +49,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/service-core/src/test/java/com/magneton/service/core/limiter/DefaultTimesLimiterTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="70">
-              <caret line="34" column="3" selection-start-line="34" selection-start-column="3" selection-end-line="55" selection-end-column="5" />
+            <state relative-caret-position="450">
+              <caret line="34" column="4" selection-start-line="34" selection-start-column="4" selection-end-line="59" selection-end-column="5" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -60,10 +59,24 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/service-core/src/main/java/com/magneton/service/core/limiter/TimesLimiter.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="201">
+              <caret line="36" selection-start-line="36" selection-end-line="36" />
+              <folding>
+                <element signature="e#754#755#0" expanded="true" />
+                <element signature="e#1151#1152#0" expanded="true" />
+                <element signature="e#1203#1204#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/service-core-spring/src/test/java/com/magneton/service/core/spring/limiter/RedisTimesLimiterTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="261">
-              <caret line="60" column="40" selection-start-line="60" selection-start-column="40" selection-end-line="60" selection-end-column="40" />
+            <state relative-caret-position="260">
+              <caret line="63" column="36" lean-forward="true" selection-start-line="63" selection-start-column="36" selection-end-line="63" selection-end-column="36" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -77,16 +90,6 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="811">
               <caret line="57" column="28" selection-start-line="57" selection-start-column="28" selection-end-line="57" selection-end-column="28" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/service-core/pom.xml">
-          <provider editor-type-id="MavenHelperPluginDependencyAnalyzer" />
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="152">
-              <caret line="47" column="7" selection-start-line="47" selection-start-column="7" selection-end-line="52" selection-end-column="21" />
             </state>
           </provider>
         </entry>
@@ -106,10 +109,22 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/service-core/src/main/java/com/magneton/service/core/limiter/TimesLimiter.java">
+        <entry file="jar://$MAVEN_REPOSITORY$/org/checkerframework/checker-qual/2.5.2/checker-qual-2.5.2.jar!/org/checkerframework/common/reflection/qual/UnknownMethod.class">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="422">
-              <caret line="66" column="22" lean-forward="true" selection-start-line="66" selection-start-column="22" selection-end-line="66" selection-end-column="22" />
+            <state relative-caret-position="319">
+              <caret line="20" column="18" selection-start-line="20" selection-start-column="18" selection-end-line="20" selection-end-column="18" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="jar://C:/Program Files/Java/jdk8/src.zip!/java/util/concurrent/atomic/LongAdder.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="237">
+              <caret line="97" column="29" lean-forward="true" selection-start-line="97" selection-start-column="29" selection-end-line="97" selection-end-column="29" />
+              <folding>
+                <element signature="e#2718#2719#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -117,8 +132,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/service-core-spring/src/main/java/com/magneton/service/core/spring/limiter/RedisTimesLimiter.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="264">
-              <caret line="41" column="33" selection-start-line="41" selection-start-column="33" selection-end-line="41" selection-end-column="33" />
+            <state relative-caret-position="270">
+              <caret line="87" column="78" selection-start-line="87" selection-start-column="78" selection-end-line="87" selection-end-column="78" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -127,40 +142,12 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/service-core-spring/src/main/java/com/magneton/service/core/spring/limiter/TimesLimiterConfiguration.java">
+        <entry file="file://$PROJECT_DIR$/service-core/src/main/java/com/magneton/service/core/limiter/DefaultTimesLimiter.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
-              <caret line="13" column="28" selection-start-line="13" selection-start-column="28" selection-end-line="13" selection-end-column="28" />
+            <state relative-caret-position="162">
+              <caret line="70" lean-forward="true" selection-start-line="70" selection-end-line="70" />
               <folding>
                 <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/service-core-spring/src/main/java/com/magneton/service/core/spring/limiter/TimesLimiterProperties.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="342">
-              <caret line="25" column="37" lean-forward="true" selection-start-line="25" selection-start-column="37" selection-end-line="25" selection-end-column="37" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/service-core/src/main/java/com/magneton/service/core/limiter/LimiterRule.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="334">
-              <caret line="25" column="36" lean-forward="true" selection-start-line="25" selection-start-column="36" selection-end-line="25" selection-end-column="36" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#410#411#0" expanded="true" />
-                <element signature="e#438#439#0" expanded="true" />
-                <element signature="e#470#471#0" expanded="true" />
-                <element signature="e#501#502#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -555,7 +542,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.RedisTimesLimiterTest.testTtl">
+  <component name="RunManager" selected="JUnit.RedisTimesLimiterTest.testIncreaseEx">
     <configuration default="true" type="Applet">
       <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
       <method v="2">
@@ -564,6 +551,23 @@
     </configuration>
     <configuration default="true" type="Application" factoryName="Application">
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="DefaultTimesLimiterTest.testIncreaseEx" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="service-core" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.magneton.service.core.limiter.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.magneton.service.core.limiter" />
+      <option name="MAIN_CLASS_NAME" value="com.magneton.service.core.limiter.DefaultTimesLimiterTest" />
+      <option name="METHOD_NAME" value="testIncreaseEx" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -602,7 +606,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="RedisTimesLimiterTest.testRemain" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="RedisTimesLimiterTest.testIncreaseEx" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="service-core-spring" />
       <extension name="coverage">
         <pattern>
@@ -612,7 +616,7 @@
       </extension>
       <option name="PACKAGE_NAME" value="com.magneton.service.core.spring.limiter" />
       <option name="MAIN_CLASS_NAME" value="com.magneton.service.core.spring.limiter.RedisTimesLimiterTest" />
-      <option name="METHOD_NAME" value="testRemain" />
+      <option name="METHOD_NAME" value="testIncreaseEx" />
       <option name="TEST_OBJECT" value="method" />
       <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
       <method v="2">
@@ -630,23 +634,6 @@
       <option name="PACKAGE_NAME" value="com.magneton.service.core.spring.limiter" />
       <option name="MAIN_CLASS_NAME" value="com.magneton.service.core.spring.limiter.RedisTimesLimiterTest" />
       <option name="METHOD_NAME" value="testTtl" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="RequestDefenceConfigurationTest.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="service-core-spring" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.magneton.service.core.spring.defence.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.magneton.service.core.spring.defence" />
-      <option name="MAIN_CLASS_NAME" value="com.magneton.service.core.spring.defence.RequestDefenceConfigurationTest" />
-      <option name="METHOD_NAME" value="test" />
       <option name="TEST_OBJECT" value="method" />
       <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
       <method v="2">
@@ -678,11 +665,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.RedisTimesLimiterTest.testIncreaseEx" />
+        <item itemvalue="JUnit.DefaultTimesLimiterTest.testIncreaseEx" />
         <item itemvalue="JUnit.RedisTimesLimiterTest.testTtl" />
         <item itemvalue="JUnit.DefaultTimesLimiterTest.testTtl" />
         <item itemvalue="JUnit.DefaultTimesLimiterTest.testRemain" />
-        <item itemvalue="JUnit.RedisTimesLimiterTest.testRemain" />
-        <item itemvalue="JUnit.RequestDefenceConfigurationTest.test" />
       </list>
     </recent_temporary>
   </component>
@@ -714,44 +701,44 @@
       <workItem from="1562115291502" duration="3000" />
       <workItem from="1562723075504" duration="32000" />
       <workItem from="1562723273372" duration="2262000" />
-      <workItem from="1563355500091" duration="9042000" />
+      <workItem from="1563355500091" duration="11699000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="RedisTimesLimiterTest_testRemain - 2019.07.18 at 14h 57m 11s.xml">
-      <configuration name="RedisTimesLimiterTest.testRemain" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="DefaultTimesLimiterTest_testRemain - 2019.07.18 at 14h 58m 01s.xml">
-      <configuration name="DefaultTimesLimiterTest.testRemain" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="DefaultTimesLimiterTest_testRemain - 2019.07.18 at 14h 58m 08s.xml">
-      <configuration name="DefaultTimesLimiterTest.testRemain" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="DefaultTimesLimiterTest_testTtl - 2019.07.18 at 16h 36m 30s.xml">
-      <configuration name="DefaultTimesLimiterTest.testTtl" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="DefaultTimesLimiterTest_testTtl - 2019.07.18 at 16h 36m 58s.xml">
-      <configuration name="DefaultTimesLimiterTest.testTtl" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="DefaultTimesLimiterTest_testTtl - 2019.07.18 at 16h 37m 43s.xml">
-      <configuration name="DefaultTimesLimiterTest.testTtl" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="DefaultTimesLimiterTest_testTtl - 2019.07.18 at 16h 37m 45s.xml">
-      <configuration name="DefaultTimesLimiterTest.testTtl" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="DefaultTimesLimiterTest_testTtl - 2019.07.18 at 16h 37m 48s.xml">
-      <configuration name="DefaultTimesLimiterTest.testTtl" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="DefaultTimesLimiterTest_testTtl - 2019.07.18 at 16h 38m 10s.xml">
-      <configuration name="DefaultTimesLimiterTest.testTtl" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="RedisTimesLimiterTest_testTtl - 2019.07.18 at 16h 40m 18s.xml">
       <configuration name="RedisTimesLimiterTest.testTtl" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="RedisTimesLimiterTest_testTtl - 2019.07.18 at 16h 40m 45s.xml">
+      <configuration name="RedisTimesLimiterTest.testTtl" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="DefaultTimesLimiterTest_testIncreaseEx - 2019.07.18 at 17h 11m 47s.xml">
+      <configuration name="DefaultTimesLimiterTest.testIncreaseEx" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="DefaultTimesLimiterTest_testIncreaseEx - 2019.07.18 at 17h 11m 58s.xml">
+      <configuration name="DefaultTimesLimiterTest.testIncreaseEx" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="DefaultTimesLimiterTest_testIncreaseEx - 2019.07.18 at 17h 12m 15s.xml">
+      <configuration name="DefaultTimesLimiterTest.testIncreaseEx" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="DefaultTimesLimiterTest_testIncreaseEx - 2019.07.18 at 17h 12m 29s.xml">
+      <configuration name="DefaultTimesLimiterTest.testIncreaseEx" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="DefaultTimesLimiterTest_testIncreaseEx - 2019.07.18 at 17h 12m 39s.xml">
+      <configuration name="DefaultTimesLimiterTest.testIncreaseEx" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="DefaultTimesLimiterTest_testIncreaseEx - 2019.07.18 at 17h 14m 25s.xml">
+      <configuration name="DefaultTimesLimiterTest.testIncreaseEx" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="DefaultTimesLimiterTest_testIncreaseEx - 2019.07.18 at 17h 14m 31s.xml">
+      <configuration name="DefaultTimesLimiterTest.testIncreaseEx" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="RedisTimesLimiterTest_testIncreaseEx - 2019.07.18 at 17h 24m 46s.xml">
+      <configuration name="RedisTimesLimiterTest.testIncreaseEx" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="108090000" />
+    <option name="totallyTimeSpent" value="110747000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -769,7 +756,7 @@
       <window_info anchor="bottom" id="Spring" order="2" />
       <window_info anchor="bottom" id="Find" order="3" weight="0.32855436" />
       <window_info anchor="bottom" id="Run" order="4" weight="0.32896304" />
-      <window_info active="true" anchor="bottom" x="314" y="364" width="1358" height="439" id="Debug" order="5" visible="true" weight="0.4050179" />
+      <window_info active="true" anchor="bottom" x="314" y="364" width="1358" height="439" id="Debug" order="5" visible="true" weight="0.4683393" />
       <window_info anchor="bottom" id="Run with VisualVM" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="TODO" order="8" />
@@ -778,7 +765,7 @@
       <window_info anchor="bottom" id="SonarLint" order="11" />
       <window_info anchor="bottom" id="Tail" order="12" />
       <window_info anchor="bottom" id="Database Changes" order="13" />
-      <window_info anchor="bottom" id="Terminal" order="14" sideWeight="0.49970222" weight="0.20549582" />
+      <window_info anchor="bottom" id="Terminal" order="14" sideWeight="0.49970222" weight="0.101553164" />
       <window_info anchor="bottom" id="JRebel Console" order="15" side_tool="true" />
       <window_info anchor="bottom" id="JRebel Executor" order="16" />
       <window_info anchor="bottom" id="Debug with VisualVM" order="17" />
@@ -820,6 +807,12 @@
           <properties />
           <option name="timeStamp" value="1" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/service-core-spring/src/test/java/com/magneton/service/core/spring/limiter/RedisTimesLimiterTest.java</url>
+          <line>97</line>
+          <properties />
+          <option name="timeStamp" value="7" />
+        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
   </component>
@@ -837,24 +830,6 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springmodules/spring-modules-cache/0.8/spring-modules-cache-0.8.jar!/org/springmodules/cache/annotations/CacheFlush.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="290">
-          <caret line="18" column="18" selection-start-line="18" selection-start-column="18" selection-end-line="18" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springmodules/spring-modules-cache/0.8/spring-modules-cache-0.8-sources.jar!/org/springmodules/cache/regex/PatternInvalidSyntaxException.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="363">
-          <caret line="38" column="5" lean-forward="true" selection-start-line="38" selection-start-column="5" selection-end-line="38" selection-end-column="5" />
-          <folding>
-            <element signature="e#1186#1187#0" expanded="true" />
-            <element signature="e#1206#1207#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/org/springmodules/spring-modules-cache/0.8/spring-modules-cache-0.8-sources.jar!/org/springmodules/cache/regex/Perl5Regex.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-1097">
@@ -1166,26 +1141,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/service-core/src/main/java/com/magneton/service/core/limiter/DefaultTimesLimiter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="129">
-          <caret line="84" column="19" selection-start-line="84" selection-start-column="19" selection-end-line="84" selection-end-column="19" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/service-core-spring/src/main/java/com/magneton/service/core/spring/limiter/TimesLimiterProperties.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="342">
-          <caret line="25" column="37" lean-forward="true" selection-start-line="25" selection-start-column="37" selection-end-line="25" selection-end-column="37" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/service-core/src/main/java/com/magneton/service/core/limiter/LimiterRule.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="334">
@@ -1200,10 +1155,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/service-core/src/main/java/com/magneton/service/core/limiter/TimesLimiter.java">
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider editor-type-id="MavenHelperPluginDependencyAnalyzer" />
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="422">
-          <caret line="66" column="22" lean-forward="true" selection-start-line="66" selection-start-column="22" selection-end-line="66" selection-end-column="22" />
+        <state relative-caret-position="811">
+          <caret line="57" column="28" selection-start-line="57" selection-start-column="28" selection-end-line="57" selection-end-column="28" />
         </state>
       </provider>
     </entry>
@@ -1219,18 +1175,59 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider editor-type-id="MavenHelperPluginDependencyAnalyzer" />
+    <entry file="jar://C:/Program Files/Java/jdk8/src.zip!/java/util/concurrent/atomic/LongAdder.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="811">
-          <caret line="57" column="28" selection-start-line="57" selection-start-column="28" selection-end-line="57" selection-end-column="28" />
+        <state relative-caret-position="237">
+          <caret line="97" column="29" lean-forward="true" selection-start-line="97" selection-start-column="29" selection-end-line="97" selection-end-column="29" />
+          <folding>
+            <element signature="e#2718#2719#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/service-core-spring/src/main/java/com/magneton/service/core/spring/limiter/TimesLimiterProperties.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="22" column="48" lean-forward="true" selection-start-line="22" selection-start-column="48" selection-end-line="22" selection-end-column="48" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/checkerframework/checker-qual/2.5.2/checker-qual-2.5.2.jar!/org/checkerframework/common/reflection/qual/UnknownMethod.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="319">
+          <caret line="20" column="18" selection-start-line="20" selection-start-column="18" selection-end-line="20" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/service-core/src/main/java/com/magneton/service/core/limiter/TimesLimiter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="201">
+          <caret line="36" selection-start-line="36" selection-end-line="36" />
+          <folding>
+            <element signature="e#754#755#0" expanded="true" />
+            <element signature="e#1151#1152#0" expanded="true" />
+            <element signature="e#1203#1204#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/service-core/src/main/java/com/magneton/service/core/limiter/DefaultTimesLimiter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="162">
+          <caret line="70" lean-forward="true" selection-start-line="70" selection-end-line="70" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/service-core/src/test/java/com/magneton/service/core/limiter/DefaultTimesLimiterTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="70">
-          <caret line="34" column="3" selection-start-line="34" selection-start-column="3" selection-end-line="55" selection-end-column="5" />
+        <state relative-caret-position="450">
+          <caret line="34" column="4" selection-start-line="34" selection-start-column="4" selection-end-line="59" selection-end-column="5" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -1239,8 +1236,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/service-core-spring/src/test/java/com/magneton/service/core/spring/limiter/RedisTimesLimiterTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="261">
-          <caret line="60" column="40" selection-start-line="60" selection-start-column="40" selection-end-line="60" selection-end-column="40" />
+        <state relative-caret-position="260">
+          <caret line="63" column="36" lean-forward="true" selection-start-line="63" selection-start-column="36" selection-end-line="63" selection-end-column="36" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -1249,8 +1246,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/service-core-spring/src/main/java/com/magneton/service/core/spring/limiter/RedisTimesLimiter.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="264">
-          <caret line="41" column="33" selection-start-line="41" selection-start-column="33" selection-end-line="41" selection-end-column="33" />
+        <state relative-caret-position="270">
+          <caret line="87" column="78" selection-start-line="87" selection-start-column="78" selection-end-line="87" selection-end-column="78" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

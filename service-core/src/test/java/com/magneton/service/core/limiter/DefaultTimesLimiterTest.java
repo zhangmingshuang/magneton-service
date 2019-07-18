@@ -33,6 +33,33 @@ public class DefaultTimesLimiterTest {
     }
 
     @Test
+    public void testIncreaseEx(){
+        Map<String, LimiterRule> rules = new HashMap<>();
+        LimiterRule secondsLimiterRule = new LimiterRule();
+        //3s
+        secondsLimiterRule.setExpireIn(3);
+        //3times
+        secondsLimiterRule.setTimes(3);
+        rules.put("remain", secondsLimiterRule);
+
+        TimesLimiterConfig remainConfig = new TimesLimiterConfig();
+        remainConfig.setRules(rules);
+        remainConfig.setDefaultRule(secondsLimiterRule);
+        remainConfig.setForce(true);
+
+        TimesLimiter limiter = new DefaultTimesLimiter();
+        limiter.afterConfigSet(remainConfig);
+
+        int incr = limiter.increaseEx("test","remain",4);
+        System.out.println(incr);
+        Assert.assertFalse(limiter.increase("test","remain"));
+
+        incr = limiter.increaseEx("test","remain2",4);
+        System.out.println(incr);
+        Assert.assertFalse(limiter.increase("test","remain2"));
+    }
+
+    @Test
     public void testTtl() {
 
         Map<String, LimiterRule> rules = new HashMap<>();
