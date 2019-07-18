@@ -48,6 +48,29 @@ public class RedisTimesLimiterTest {
     }
 
     @Test
+    public void testTtl() {
+
+        Map<String, LimiterRule> rules = new HashMap<>();
+        LimiterRule secondsLimiterRule = new LimiterRule();
+        //3s
+        secondsLimiterRule.setExpireIn(3);
+        //3times
+        secondsLimiterRule.setTimes(3);
+        rules.put("remain", secondsLimiterRule);
+
+        TimesLimiterConfig remainConfig = new TimesLimiterConfig();
+        remainConfig.setRules(rules);
+        remainConfig.setDefaultRule(secondsLimiterRule);
+
+        TimesLimiter limiter = new RedisTimesLimiter(redisTemplate);
+        limiter.afterConfigSet(remainConfig);
+
+        Assert.assertEquals(limiter.ttl("test", "remain"), -1);
+        limiter.increase("test", "remain");
+        Assert.assertTrue(limiter.ttl("test", "remain") >= 2);
+    }
+
+    @Test
     public void testRemain() {
         Map<String, LimiterRule> rules = new HashMap<>();
         LimiterRule secondsLimiterRule = new LimiterRule();

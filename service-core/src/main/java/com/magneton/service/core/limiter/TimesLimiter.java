@@ -57,4 +57,14 @@ public interface TimesLimiter extends Configurable<TimesLimiterConfig> {
      * 如果返回-1表示没有限制
      */
     int remain(String key, String rule);
+
+    /**
+     * 取得当前Key在多少秒之后过期
+     *
+     * @param key  Key
+     * @param rule 规则
+     * @return 在多少秒之后过期
+     * 如果规则或者key还未被创建，返回-1
+     */
+    int ttl(String key, String rule);
 }

@@ -75,6 +75,15 @@ public class DefaultTimesLimiter implements TimesLimiter {
             }
             return false;
         }
+
+        public int ttl() {
+            long timePast = System.currentTimeMillis() - createTime;
+            if (timePast >= expireIn) {
+                //过时了
+                return -1;
+            }
+            return (int) ((expireIn - timePast) / 1000);
+        }
     }
 
 
@@ -92,6 +101,19 @@ public class DefaultTimesLimiter implements TimesLimiter {
     public void afterConfigSet(TimesLimiterConfig config) {
         this.config = config;
         segmentLocks = new SegmentLocks(1);
+    }
+
+    @Override
+    public int ttl(String key, String rule) {
+        Map<String, Limiter> keyLimit = limiters.get(key);
+        if (keyLimit == null) {
+            return -1;
+        }
+        Limiter limiter = keyLimit.get(rule);
+        if (limiter == null) {
+            return -1;
+        }
+        return limiter.ttl();
     }
 
     @Override

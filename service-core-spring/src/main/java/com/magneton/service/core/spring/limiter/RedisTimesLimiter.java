@@ -32,6 +32,18 @@ public class RedisTimesLimiter implements TimesLimiter {
     }
 
     @Override
+    public int ttl(String key, String rule) {
+        return (int) redisTemplate.execute((RedisCallback) conn -> {
+            byte[] ks = (key + ":" + rule).getBytes();
+            Long ttl = conn.ttl(ks);
+            if (ttl == null || ttl.intValue() < 0) {
+                return -1;
+            }
+            return ttl.intValue();
+        });
+    }
+
+    @Override
     public int remain(String key, String rule) {
         return (int) redisTemplate.execute((RedisCallback) conn -> {
             byte[] ks = (key + ":" + rule).getBytes();

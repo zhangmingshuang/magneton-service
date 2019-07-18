@@ -39,4 +39,8 @@ public class TimesLimiterConfig {
      */
     private LimiterRule defaultRule = new LimiterRule();
 
+
+    public void addRule(String rule, LimiterRule limiterRule) {
+        this.rules.put(rule, limiterRule);
+    }
 }
