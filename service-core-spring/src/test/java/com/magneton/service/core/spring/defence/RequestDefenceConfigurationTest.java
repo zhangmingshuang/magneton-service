@@ -24,6 +24,7 @@ public class RequestDefenceConfigurationTest {
 
     @Test
     public void test(){
+        System.out.println(requestDefence);
         System.out.println(requestDefence.mode());
     }
 }

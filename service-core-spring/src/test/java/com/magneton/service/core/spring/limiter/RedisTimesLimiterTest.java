@@ -1,7 +1,5 @@
 package com.magneton.service.core.spring.limiter;
 
-import com.google.common.util.concurrent.TimeLimiter;
-import com.magneton.service.core.limiter.DefaultTimesLimiter;
 import com.magneton.service.core.limiter.LimiterRule;
 import com.magneton.service.core.limiter.TimesLimiter;
 import com.magneton.service.core.limiter.TimesLimiterConfig;
@@ -11,7 +9,6 @@ import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
-import org.springframework.context.annotation.Import;
 import org.springframework.data.redis.core.RedisTemplate;
 import org.springframework.test.context.junit4.SpringRunner;
 
@@ -48,6 +45,40 @@ public class RedisTimesLimiterTest {
         config = new TimesLimiterConfig();
         config.setRules(rules);
 
+    }
+
+    @Test
+    public void testRemain() {
+        Map<String, LimiterRule> rules = new HashMap<>();
+        LimiterRule secondsLimiterRule = new LimiterRule();
+        //3s
+        secondsLimiterRule.setExpireIn(3);
+        //3times
+        secondsLimiterRule.setTimes(3);
+        rules.put("remain", secondsLimiterRule);
+
+        TimesLimiterConfig remainConfig = new TimesLimiterConfig();
+        remainConfig.setRules(rules);
+        remainConfig.setDefaultRule(secondsLimiterRule);
+
+        TimesLimiter limiter = new RedisTimesLimiter(redisTemplate);
+        limiter.afterConfigSet(remainConfig);
+        int remain = limiter.remain("testKey", "remain");
+        Assert.assertTrue(remain == 3);
+        remain = limiter.remain("testKey2", "remain");
+        Assert.assertTrue(remain == 3);
+        remain = limiter.remain("testKey", "remain2");
+        Assert.assertTrue(remain == 3);
+        remain = limiter.remain("testKey2", "remain2");
+        Assert.assertTrue(remain == 3);
+
+        limiter.increase("testKey","remain");
+        remain = limiter.remain("testKey", "remain");
+        Assert.assertTrue(remain == 2);
+
+        limiter.increase("testKey","remain2");
+        remain = limiter.remain("testKey", "remain2");
+        Assert.assertTrue(remain == -1);
     }
 
 

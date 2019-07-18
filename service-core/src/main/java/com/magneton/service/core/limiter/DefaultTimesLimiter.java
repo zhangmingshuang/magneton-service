@@ -9,6 +9,29 @@ import java.util.concurrent.locks.ReentrantLock;
 
 /**
  * 基于TreeMap的默认次数限制器
+ * <p>
+ * 使用示例与说明
+ * <p>
+ * 1.制定规则
+ * <pre>
+ * Map<String, LimiterRule> rules = new HashMap<>();
+ * LimiterRule rule = new LimiterRule();
+ * rule.setExpireIn(60);//设置时间限制的时间范围
+ * rule.setTimes(3);//表示在时间限制范围内，只允许请求3次数
+ * rules.put("rule",rule);//设置规则名称为"rule"
+ * </pre>
+ * 2. 创建限制器
+ * <pre>
+ *  TimesLimiterConfig config = new TimesLimiterConfig();
+ *  config.setRules(rules);
+ *  TimesLimiter limiter = new DefaultTimesLimiter();
+ *  limiter.afterConfigSet(config);
+ * </pre>
+ * 3.使用
+ * <pre>
+ *  boolean increase = limiter.increase("任意Key","rule");
+ * </pre>
+ * 该方法会返回是否成功，如果失败表示没有足够的次数可以消耗，需要在配置的过期时间之后才可以再次允许
  *
  * @author zhangmingshuang
  * @since 2019/6/20
@@ -28,6 +51,10 @@ public class DefaultTimesLimiter implements TimesLimiter {
                 this.createTime = System.currentTimeMillis();
                 this.expireIn = rule.getExpireIn() * 1000;
             }
+        }
+
+        public boolean isNull() {
+            return rule == null;
         }
 
         public boolean increase() {
@@ -65,6 +92,26 @@ public class DefaultTimesLimiter implements TimesLimiter {
     public void afterConfigSet(TimesLimiterConfig config) {
         this.config = config;
         segmentLocks = new SegmentLocks(1);
+    }
+
+    @Override
+    public int remain(String key, String rule) {
+        Map<String, Limiter> keyLimit = limiters.get(key);
+        Limiter limiter;
+        if (keyLimit == null
+                || (limiter = keyLimit.get(rule)) == null) {
+            LimiterRule limiterRule = config.getRules().get(rule);
+            if (limiterRule == null || config.isForce()) {
+                LimiterRule defaultRule = config.getDefaultRule();
+                return defaultRule.getTimes();
+            }
+            return limiterRule.getTimes();
+        }
+        if (limiter.isNull()) {
+            return -1;
+        }
+        int times = limiter.rule.getTimes() - limiter.times.intValue();
+        return times < 0 ? 0 : times;
     }
 
     @Override

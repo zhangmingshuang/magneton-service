@@ -33,6 +33,40 @@ public class DefaultTimesLimiterTest {
     }
 
     @Test
+    public void testRemain() {
+        Map<String, LimiterRule> rules = new HashMap<>();
+        LimiterRule secondsLimiterRule = new LimiterRule();
+        //3s
+        secondsLimiterRule.setExpireIn(3);
+        //3times
+        secondsLimiterRule.setTimes(3);
+        rules.put("remain", secondsLimiterRule);
+
+        TimesLimiterConfig remainConfig = new TimesLimiterConfig();
+        remainConfig.setRules(rules);
+        remainConfig.setDefaultRule(secondsLimiterRule);
+
+        TimesLimiter limiter = new DefaultTimesLimiter();
+        limiter.afterConfigSet(remainConfig);
+        int remain = limiter.remain("testKey", "remain");
+        Assert.assertTrue(remain == 3);
+        remain = limiter.remain("testKey2", "remain");
+        Assert.assertTrue(remain == 3);
+        remain = limiter.remain("testKey", "remain2");
+        Assert.assertTrue(remain == 3);
+        remain = limiter.remain("testKey2", "remain2");
+        Assert.assertTrue(remain == 3);
+
+        limiter.increase("testKey","remain");
+        remain = limiter.remain("testKey", "remain");
+        Assert.assertTrue(remain == 2);
+
+        limiter.increase("testKey","remain2");
+        remain = limiter.remain("testKey", "remain2");
+        Assert.assertTrue(remain == -1);
+    }
+
+    @Test
     public void test4() {
 
         Map<String, LimiterRule> rules = new HashMap<>();

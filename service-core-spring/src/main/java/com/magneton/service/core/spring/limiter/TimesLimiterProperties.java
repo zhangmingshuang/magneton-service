@@ -4,6 +4,8 @@ import com.magneton.service.core.limiter.TimesLimiterConfig;
 import org.springframework.boot.context.properties.ConfigurationProperties;
 
 /**
+ * TimesLimiter的配置转化以支持SpringBoot的配置文件自动装配
+ *
  * @author zhangmingshuang
  * @since 2019/6/21
  */

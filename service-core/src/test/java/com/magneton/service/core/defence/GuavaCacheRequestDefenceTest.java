@@ -59,5 +59,26 @@ public class GuavaCacheRequestDefenceTest {
         Assert.assertTrue(ttl > 0);
     }
 
+    @Test
+    public void testFlow() {
+        String userId = "userId";
+        long ttl = defence.ttl(userId);
+        if (ttl > 0) {
+            System.out.println("请等待多少" + ttl + "秒后重试");
+            return;
+        }
+        String pwd = "test";
+        if (!"asb".equals(pwd)) {
+            int i = defence.decrAcquire(userId);
+            if (i <= 0) {
+                System.out.println("您错误次数过多，已被锁定");
+                return;
+            }
+            System.out.println("您还可以错误" + i + "次");
+            return;
+        }
+        defence.remote(userId);
+
+    }
 
 }

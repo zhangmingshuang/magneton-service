@@ -10,6 +10,9 @@ import org.springframework.context.annotation.Configuration;
 import org.springframework.data.redis.core.RedisTemplate;
 
 /**
+ * SpringBoot的服务配置注主
+ * 实现环境自动判断使用合适的TimesLimiter
+ *
  * @author zhangmingshuang
  * @since 2019/6/4
  */
@@ -28,7 +31,7 @@ public class TimesLimiterConfiguration {
     @Bean
     @ConditionalOnClass(RedisTemplate.class)
     public TimesLimiter timesLimiter(RedisTemplate redisTemplate,
-                                       TimesLimiterProperties properties) {
+                                     TimesLimiterProperties properties) {
         TimesLimiter timesLimiter;
         if (properties.isLocal()) {
             timesLimiter = new DefaultTimesLimiter();

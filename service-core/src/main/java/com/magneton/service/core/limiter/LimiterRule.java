@@ -4,6 +4,8 @@ import lombok.Getter;
 import lombok.Setter;
 
 /**
+ * 限制器规则配置
+ *
  * @author zhangmingshuang
  * @since 2019/6/20
  */

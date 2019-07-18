@@ -7,7 +7,13 @@ import org.springframework.data.redis.core.RedisCallback;
 import org.springframework.data.redis.core.RedisTemplate;
 
 /**
+ * RedisTemplate的TimesLimiter
+ * <p>
+ * 功能与{@link com.magneton.service.core.limiter.DefaultTimesLimiter} 一致
+ *
  * @author zhangmingshuang
+ * @see TimesLimiterProperties
+ * @see TimesLimiterConfiguration
  * @since 2019/6/21
  */
 public class RedisTimesLimiter implements TimesLimiter {
@@ -23,6 +29,26 @@ public class RedisTimesLimiter implements TimesLimiter {
     @Override
     public void afterConfigSet(TimesLimiterConfig config) {
         this.config = config;
+    }
+
+    @Override
+    public int remain(String key, String rule) {
+        return (int) redisTemplate.execute((RedisCallback) conn -> {
+            byte[] ks = (key + ":" + rule).getBytes();
+            byte[] value = conn.get(ks);
+            if (value == null || value.length < 1) {
+                LimiterRule limiterRule = config.getRules().get(rule);
+                if (limiterRule == null && config.isForce()) {
+                    LimiterRule defaultRule = config.getDefaultRule();
+                    return defaultRule.getTimes();
+                }
+                if (limiterRule == null) {
+                    return -1;
+                }
+                return limiterRule.getTimes();
+            }
+            return Long.parseLong(new String(value));
+        });
     }
 
     @Override

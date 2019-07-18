@@ -2,8 +2,21 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="acd58b7d-afc6-4f52-b046-7a64307bfedf" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service-core-spring/src/main/java/com/magneton/service/core/spring/defence/RequestDefenceConfiguration.java" beforeDir="false" afterPath="$PROJECT_DIR$/service-core-spring/src/main/java/com/magneton/service/core/spring/defence/RequestDefenceConfiguration.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service-core-spring/src/main/java/com/magneton/service/core/spring/limiter/RedisTimesLimiter.java" beforeDir="false" afterPath="$PROJECT_DIR$/service-core-spring/src/main/java/com/magneton/service/core/spring/limiter/RedisTimesLimiter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service-core-spring/src/main/java/com/magneton/service/core/spring/limiter/TimesLimiterConfiguration.java" beforeDir="false" afterPath="$PROJECT_DIR$/service-core-spring/src/main/java/com/magneton/service/core/spring/limiter/TimesLimiterConfiguration.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service-core-spring/src/main/java/com/magneton/service/core/spring/limiter/TimesLimiterProperties.java" beforeDir="false" afterPath="$PROJECT_DIR$/service-core-spring/src/main/java/com/magneton/service/core/spring/limiter/TimesLimiterProperties.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service-core-spring/src/test/java/com/magneton/service/core/spring/defence/RequestDefenceConfigurationTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/service-core-spring/src/test/java/com/magneton/service/core/spring/defence/RequestDefenceConfigurationTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service-core-spring/src/test/java/com/magneton/service/core/spring/limiter/RedisTimesLimiterTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/service-core-spring/src/test/java/com/magneton/service/core/spring/limiter/RedisTimesLimiterTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service-core-spring/src/test/resource/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/service-core-spring/src/test/resource/application.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/service-core/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/service-core/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service-core/src/main/java/com/magneton/service/core/limiter/DefaultTimesLimiter.java" beforeDir="false" afterPath="$PROJECT_DIR$/service-core/src/main/java/com/magneton/service/core/limiter/DefaultTimesLimiter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service-core/src/main/java/com/magneton/service/core/limiter/LimiterRule.java" beforeDir="false" afterPath="$PROJECT_DIR$/service-core/src/main/java/com/magneton/service/core/limiter/LimiterRule.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service-core/src/main/java/com/magneton/service/core/limiter/TimesLimiter.java" beforeDir="false" afterPath="$PROJECT_DIR$/service-core/src/main/java/com/magneton/service/core/limiter/TimesLimiter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service-core/src/test/java/com/magneton/service/core/defence/GuavaCacheRequestDefenceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/service-core/src/test/java/com/magneton/service/core/defence/GuavaCacheRequestDefenceTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service-core/src/test/java/com/magneton/service/core/limiter/DefaultTimesLimiterTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/service-core/src/test/java/com/magneton/service/core/limiter/DefaultTimesLimiterTest.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -43,65 +56,10 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="450">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/service-core-spring/src/test/java/com/magneton/service/core/spring/limiter/RedisTimesLimiterTest.java">
+        <entry file="file://$PROJECT_DIR$/service-core/src/test/java/com/magneton/service/core/limiter/DefaultTimesLimiterTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="290">
-              <caret line="168" column="23" selection-start-line="168" selection-start-column="23" selection-end-line="168" selection-end-column="23" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/service-core/pom.xml">
-          <provider editor-type-id="MavenHelperPluginDependencyAnalyzer" />
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="448">
-              <caret line="47" column="21" selection-start-line="47" selection-start-column="21" selection-end-line="47" selection-end-column="21" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/service-core/src/main/java/com/magneton/service/core/defence/GuavaCacheRequestDefence.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="145">
-              <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/document/安全组件-请求防御.md">
-          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-            <state split_layout="SPLIT">
-              <first_editor relative-caret-position="435">
-                <caret line="45" column="7" selection-start-line="45" selection-start-column="7" selection-end-line="45" selection-end-column="7" />
-              </first_editor>
-              <second_editor />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/service-core-spring/src/main/java/com/magneton/service/core/spring/limiter/TimesLimiterProperties.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="145">
-              <caret line="11" column="54" selection-start-line="11" selection-start-column="54" selection-end-line="11" selection-end-column="54" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/service-core-spring/src/main/java/com/magneton/service/core/spring/limiter/TimesLimiterConfiguration.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret line="15" column="14" selection-start-line="15" selection-start-column="14" selection-end-line="15" selection-end-column="14" />
+            <state relative-caret-position="364">
+              <caret line="25" column="34" selection-start-line="25" selection-start-column="34" selection-end-line="25" selection-end-column="34" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -112,8 +70,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/service-core/src/main/java/com/magneton/service/core/limiter/TimesLimiterConfig.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="190">
-              <caret line="32" column="42" selection-start-line="32" selection-start-column="42" selection-end-line="32" selection-end-column="42" />
+            <state relative-caret-position="139">
+              <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -122,10 +80,10 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/service-core/src/main/java/com/magneton/service/core/limiter/LimiterRule.java">
+        <entry file="file://$PROJECT_DIR$/service-core-spring/src/test/java/com/magneton/service/core/spring/limiter/RedisTimesLimiterTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="259">
-              <caret line="20" column="7" selection-start-line="20" selection-start-column="7" selection-end-line="20" selection-end-column="7" />
+            <state relative-caret-position="274">
+              <caret line="65" column="32" selection-start-line="65" selection-start-column="32" selection-end-line="65" selection-end-column="32" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -134,10 +92,34 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/service-core/src/test/java/com/magneton/service/core/limiter/DefaultTimesLimiterTest.java">
+        <entry file="file://$PROJECT_DIR$/service-core-spring/src/main/java/com/magneton/service/core/spring/limiter/RedisTimesLimiter.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="48">
-              <caret line="57" column="21" selection-start-line="57" selection-start-column="21" selection-end-line="57" selection-end-column="21" />
+            <state relative-caret-position="406">
+              <caret line="15" column="29" lean-forward="true" selection-start-line="15" selection-start-column="29" selection-end-line="15" selection-end-column="29" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/service-core-spring/src/main/java/com/magneton/service/core/spring/limiter/TimesLimiterConfiguration.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="238">
+              <caret line="13" column="28" selection-start-line="13" selection-start-column="28" selection-end-line="13" selection-end-column="28" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/service-core-spring/src/main/java/com/magneton/service/core/spring/limiter/TimesLimiterProperties.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="342">
+              <caret line="25" column="37" lean-forward="true" selection-start-line="25" selection-start-column="37" selection-end-line="25" selection-end-column="37" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -182,6 +164,7 @@
       <find>DEFAULT_CONCURRENCY_LEVEL</find>
       <find>UNTREEIFY_THRESHOLD</find>
       <find>TreeMap</find>
+      <find>DefaultTimesLimiter</find>
     </findStrings>
     <replaceStrings>
       <replace>StringUtil</replace>
@@ -202,9 +185,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/service-core/src/main/java/com/magneton/service/core/replacer/JsonSundayReplace.java" />
-        <option value="$PROJECT_DIR$/document/通用组件-签名工具.md" />
-        <option value="$PROJECT_DIR$/service-core/src/main/java/com/magneton/service/core/signature/AbstractorSignatureBuilder.java" />
         <option value="$PROJECT_DIR$/document/通用组件-数据摘要工具.md" />
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/service-core/src/main/java/com/magneton/service/core/util/ServletRequestUtil.java" />
@@ -230,29 +210,32 @@
         <option value="$PROJECT_DIR$/service-core/src/main/java/com/magneton/service/core/limiter/FrequencyLimiterConfig.java" />
         <option value="$PROJECT_DIR$/service-core/src/main/java/com/magneton/service/core/Configurable.java" />
         <option value="$PROJECT_DIR$/service-core/src/main/java/com/magneton/service/core/defence/RequestDefence.java" />
-        <option value="$PROJECT_DIR$/service-core/src/test/java/com/magneton/service/core/defence/GuavaCacheRequestDefenceTest.java" />
-        <option value="$PROJECT_DIR$/service-core-spring/src/main/java/com/magneton/service/core/spring/defence/RequestDefenceConfiguration.java" />
         <option value="$PROJECT_DIR$/service-core-spring/src/main/java/com/magneton/service/core/spring/defence/RedisRequestDefence.java" />
         <option value="$PROJECT_DIR$/service-core-spring/src/test/java/com/magneton/service/core/spring/defence/RedisRequestDefenceTest.java" />
         <option value="$PROJECT_DIR$/service-core/src/main/java/com/magneton/service/core/limiter/GuavaTimesLimiter.java" />
-        <option value="$PROJECT_DIR$/service-core/src/main/java/com/magneton/service/core/limiter/TimesLimiter.java" />
         <option value="$PROJECT_DIR$/service-core/src/main/java/com/magneton/service/core/limiter/Rule.java" />
         <option value="$PROJECT_DIR$/service-core/src/main/java/com/magneton/service/core/limiter/TimesLimiterConfig.java" />
-        <option value="$PROJECT_DIR$/service-core/src/main/java/com/magneton/service/core/limiter/LimiterRule.java" />
         <option value="$PROJECT_DIR$/service-core/src/main/java/com/magneton/service/core/util/SegmentLocks.java" />
         <option value="$PROJECT_DIR$/service-core-spring/src/main/java/com/magneton/service/core/spring/defence/RequestDefenceProperties.java" />
         <option value="$PROJECT_DIR$/service-core-spring/src/main/java/com/magneton/service/core/spring/limiter/RequestDefenceConfiguration.java" />
-        <option value="$PROJECT_DIR$/service-core-spring/src/main/java/com/magneton/service/core/spring/limiter/TimesLimiterProperties.java" />
-        <option value="$PROJECT_DIR$/service-core/src/main/java/com/magneton/service/core/limiter/DefaultTimesLimiter.java" />
         <option value="$PROJECT_DIR$/service-core-spring/src/test/java/com/magneton/service/core/spring/limiter/TimesLimiterPropertiesTest.java" />
+        <option value="$PROJECT_DIR$/document/安全组件-请求防御.md" />
+        <option value="$PROJECT_DIR$/document/安全组件-时间限制器.md" />
+        <option value="$PROJECT_DIR$/service-core/src/test/java/com/magneton/service/core/defence/GuavaCacheRequestDefenceTest.java" />
+        <option value="$PROJECT_DIR$/service-core/src/main/java/com/magneton/service/core/defence/GuavaCacheRequestDefence.java" />
+        <option value="$PROJECT_DIR$/service-core-spring/src/test/java/com/magneton/service/core/spring/defence/RequestDefenceConfigurationTest.java" />
+        <option value="$PROJECT_DIR$/service-core-spring/src/test/resource/application.properties" />
+        <option value="$PROJECT_DIR$/service-core-spring/src/main/java/com/magneton/service/core/spring/defence/RequestDefenceConfiguration.java" />
+        <option value="$PROJECT_DIR$/service-core/pom.xml" />
+        <option value="$USER_HOME$/.m2/settings.xml" />
+        <option value="$PROJECT_DIR$/service-core/src/main/java/com/magneton/service/core/limiter/TimesLimiter.java" />
+        <option value="$PROJECT_DIR$/service-core/src/main/java/com/magneton/service/core/limiter/DefaultTimesLimiter.java" />
+        <option value="$PROJECT_DIR$/service-core/src/main/java/com/magneton/service/core/limiter/LimiterRule.java" />
         <option value="$PROJECT_DIR$/service-core/src/test/java/com/magneton/service/core/limiter/DefaultTimesLimiterTest.java" />
+        <option value="$PROJECT_DIR$/service-core-spring/src/test/java/com/magneton/service/core/spring/limiter/RedisTimesLimiterTest.java" />
         <option value="$PROJECT_DIR$/service-core-spring/src/main/java/com/magneton/service/core/spring/limiter/RedisTimesLimiter.java" />
         <option value="$PROJECT_DIR$/service-core-spring/src/main/java/com/magneton/service/core/spring/limiter/TimesLimiterConfiguration.java" />
-        <option value="$PROJECT_DIR$/document/安全组件-请求防御.md" />
-        <option value="$PROJECT_DIR$/service-core-spring/src/test/java/com/magneton/service/core/spring/limiter/RedisTimesLimiterTest.java" />
-        <option value="$PROJECT_DIR$/document/安全组件-时间限制器.md" />
-        <option value="$PROJECT_DIR$/service-core/pom.xml" />
-        <option value="$PROJECT_DIR$/service-core/src/main/java/com/magneton/service/core/defence/GuavaCacheRequestDefence.java" />
+        <option value="$PROJECT_DIR$/service-core-spring/src/main/java/com/magneton/service/core/spring/limiter/TimesLimiterProperties.java" />
       </list>
     </option>
   </component>
@@ -261,21 +244,15 @@
       <expand>
         <path>
           <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
-          <item name="service-spring-core" type="9519ce18:MavenProjectsStructure$ProjectNode" />
-        </path>
-        <path>
-          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
-          <item name="service-spring-core" type="9519ce18:MavenProjectsStructure$ProjectNode" />
-          <item name="Dependencies" type="f4be9f2a:MavenProjectsStructure$DependenciesNode" />
+          <item name="service-starter-spring" type="9519ce18:MavenProjectsStructure$ProjectNode" />
         </path>
       </expand>
       <select />
     </treeState>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="539" />
-    <option name="y" value="38" />
-    <option name="width" value="1920" />
+    <option name="x" value="57" />
+    <option name="width" value="1863" />
     <option name="height" value="1040" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
@@ -286,6 +263,181 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="magneton-service" type="b2602c69:ProjectViewProjectNode" />
+              <item name="magneton-service" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="magneton-service" type="b2602c69:ProjectViewProjectNode" />
+              <item name="magneton-service" type="462c0819:PsiDirectoryNode" />
+              <item name="document" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="magneton-service" type="b2602c69:ProjectViewProjectNode" />
+              <item name="magneton-service" type="462c0819:PsiDirectoryNode" />
+              <item name="service-core" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="magneton-service" type="b2602c69:ProjectViewProjectNode" />
+              <item name="magneton-service" type="462c0819:PsiDirectoryNode" />
+              <item name="service-core" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="magneton-service" type="b2602c69:ProjectViewProjectNode" />
+              <item name="magneton-service" type="462c0819:PsiDirectoryNode" />
+              <item name="service-core" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="magneton-service" type="b2602c69:ProjectViewProjectNode" />
+              <item name="magneton-service" type="462c0819:PsiDirectoryNode" />
+              <item name="service-core" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="magneton-service" type="b2602c69:ProjectViewProjectNode" />
+              <item name="magneton-service" type="462c0819:PsiDirectoryNode" />
+              <item name="service-core" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="core" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="magneton-service" type="b2602c69:ProjectViewProjectNode" />
+              <item name="magneton-service" type="462c0819:PsiDirectoryNode" />
+              <item name="service-core" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="core" type="462c0819:PsiDirectoryNode" />
+              <item name="limiter" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="magneton-service" type="b2602c69:ProjectViewProjectNode" />
+              <item name="magneton-service" type="462c0819:PsiDirectoryNode" />
+              <item name="service-core" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="magneton-service" type="b2602c69:ProjectViewProjectNode" />
+              <item name="magneton-service" type="462c0819:PsiDirectoryNode" />
+              <item name="service-core" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="magneton-service" type="b2602c69:ProjectViewProjectNode" />
+              <item name="magneton-service" type="462c0819:PsiDirectoryNode" />
+              <item name="service-core" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="core" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="magneton-service" type="b2602c69:ProjectViewProjectNode" />
+              <item name="magneton-service" type="462c0819:PsiDirectoryNode" />
+              <item name="service-core" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="core" type="462c0819:PsiDirectoryNode" />
+              <item name="limiter" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="magneton-service" type="b2602c69:ProjectViewProjectNode" />
+              <item name="magneton-service" type="462c0819:PsiDirectoryNode" />
+              <item name="service-core-spring" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="magneton-service" type="b2602c69:ProjectViewProjectNode" />
+              <item name="magneton-service" type="462c0819:PsiDirectoryNode" />
+              <item name="service-core-spring" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="magneton-service" type="b2602c69:ProjectViewProjectNode" />
+              <item name="magneton-service" type="462c0819:PsiDirectoryNode" />
+              <item name="service-core-spring" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="magneton-service" type="b2602c69:ProjectViewProjectNode" />
+              <item name="magneton-service" type="462c0819:PsiDirectoryNode" />
+              <item name="service-core-spring" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="magneton-service" type="b2602c69:ProjectViewProjectNode" />
+              <item name="magneton-service" type="462c0819:PsiDirectoryNode" />
+              <item name="service-core-spring" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="spring" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="magneton-service" type="b2602c69:ProjectViewProjectNode" />
+              <item name="magneton-service" type="462c0819:PsiDirectoryNode" />
+              <item name="service-core-spring" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="spring" type="462c0819:PsiDirectoryNode" />
+              <item name="limiter" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="magneton-service" type="b2602c69:ProjectViewProjectNode" />
+              <item name="magneton-service" type="462c0819:PsiDirectoryNode" />
+              <item name="service-core-spring" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="magneton-service" type="b2602c69:ProjectViewProjectNode" />
+              <item name="magneton-service" type="462c0819:PsiDirectoryNode" />
+              <item name="service-core-spring" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="magneton-service" type="b2602c69:ProjectViewProjectNode" />
+              <item name="magneton-service" type="462c0819:PsiDirectoryNode" />
+              <item name="service-core-spring" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="spring" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="magneton-service" type="b2602c69:ProjectViewProjectNode" />
+              <item name="magneton-service" type="462c0819:PsiDirectoryNode" />
+              <item name="service-core-spring" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="spring" type="462c0819:PsiDirectoryNode" />
+              <item name="limiter" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
       <pane id="PackagesPane">
         <subPane>
           <expand>
@@ -303,165 +455,6 @@
               <item name="service-core" type="616d4139:PackageViewModuleNode" />
               <item name="com.magneton.service.core" type="1f31426a:PackageElementNode" />
               <item name="signature" type="1f31426a:PackageElementNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
-      <pane id="Scope" />
-      <pane id="ProjectPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="magneton-service" type="b2602c69:ProjectViewProjectNode" />
-              <item name="magneton-service" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="magneton-service" type="b2602c69:ProjectViewProjectNode" />
-              <item name="magneton-service" type="462c0819:PsiDirectoryNode" />
-              <item name="service-core" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="magneton-service" type="b2602c69:ProjectViewProjectNode" />
-              <item name="magneton-service" type="462c0819:PsiDirectoryNode" />
-              <item name="service-core" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="magneton-service" type="b2602c69:ProjectViewProjectNode" />
-              <item name="magneton-service" type="462c0819:PsiDirectoryNode" />
-              <item name="service-core-spring" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="magneton-service" type="b2602c69:ProjectViewProjectNode" />
-              <item name="magneton-service" type="462c0819:PsiDirectoryNode" />
-              <item name="service-core-spring" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="magneton-service" type="b2602c69:ProjectViewProjectNode" />
-              <item name="magneton-service" type="462c0819:PsiDirectoryNode" />
-              <item name="service-core-spring" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="magneton-service" type="b2602c69:ProjectViewProjectNode" />
-              <item name="magneton-service" type="462c0819:PsiDirectoryNode" />
-              <item name="service-core-spring" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="magneton-service" type="b2602c69:ProjectViewProjectNode" />
-              <item name="magneton-service" type="462c0819:PsiDirectoryNode" />
-              <item name="service-core-spring" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="spring" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="magneton-service" type="b2602c69:ProjectViewProjectNode" />
-              <item name="magneton-service" type="462c0819:PsiDirectoryNode" />
-              <item name="service-core-spring" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="spring" type="462c0819:PsiDirectoryNode" />
-              <item name="defence" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="magneton-service" type="b2602c69:ProjectViewProjectNode" />
-              <item name="magneton-service" type="462c0819:PsiDirectoryNode" />
-              <item name="service-core-spring" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="magneton-service" type="b2602c69:ProjectViewProjectNode" />
-              <item name="magneton-service" type="462c0819:PsiDirectoryNode" />
-              <item name="service-core-spring" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="magneton-service" type="b2602c69:ProjectViewProjectNode" />
-              <item name="magneton-service" type="462c0819:PsiDirectoryNode" />
-              <item name="service-core-spring" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="spring" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="magneton-service" type="b2602c69:ProjectViewProjectNode" />
-              <item name="magneton-service" type="462c0819:PsiDirectoryNode" />
-              <item name="service-core-spring" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="spring" type="462c0819:PsiDirectoryNode" />
-              <item name="defence" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="magneton-service" type="b2602c69:ProjectViewProjectNode" />
-              <item name="magneton-service" type="462c0819:PsiDirectoryNode" />
-              <item name="service-starter-spring" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="magneton-service" type="b2602c69:ProjectViewProjectNode" />
-              <item name="magneton-service" type="462c0819:PsiDirectoryNode" />
-              <item name="service-starter-spring" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="magneton-service" type="b2602c69:ProjectViewProjectNode" />
-              <item name="magneton-service" type="462c0819:PsiDirectoryNode" />
-              <item name="service-starter-spring" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="magneton-service" type="b2602c69:ProjectViewProjectNode" />
-              <item name="magneton-service" type="462c0819:PsiDirectoryNode" />
-              <item name="service-starter-spring" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="magneton-service" type="b2602c69:ProjectViewProjectNode" />
-              <item name="magneton-service" type="462c0819:PsiDirectoryNode" />
-              <item name="service-starter-spring" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="boot" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="magneton-service" type="b2602c69:ProjectViewProjectNode" />
-              <item name="magneton-service" type="462c0819:PsiDirectoryNode" />
-              <item name="service-starter-spring" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="magneton-service" type="b2602c69:ProjectViewProjectNode" />
-              <item name="magneton-service" type="462c0819:PsiDirectoryNode" />
-              <item name="service-starter-spring" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="META-INF" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="magneton-service" type="b2602c69:ProjectViewProjectNode" />
-              <item name="magneton-service" type="462c0819:PsiDirectoryNode" />
-              <item name="service-support-druid-spring" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -512,7 +505,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.RedisTimesLimiterTest.test4">
+  <component name="RunManager" selected="JUnit.DefaultTimesLimiterTest.testRemain">
     <configuration default="true" type="Applet">
       <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
       <method v="2">
@@ -525,67 +518,33 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="RedisTimesLimiterTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="service-core-spring" />
+    <configuration name="DefaultTimesLimiterTest.testRemain" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="service-core" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.magneton.service.core.spring.limiter.*" />
+          <option name="PATTERN" value="com.magneton.service.core.limiter.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.magneton.service.core.spring.limiter" />
-      <option name="MAIN_CLASS_NAME" value="com.magneton.service.core.spring.limiter.RedisTimesLimiterTest" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="RedisTimesLimiterTest.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="service-core-spring" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.magneton.service.core.spring.limiter.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.magneton.service.core.spring.limiter" />
-      <option name="MAIN_CLASS_NAME" value="com.magneton.service.core.spring.limiter.RedisTimesLimiterTest" />
-      <option name="METHOD_NAME" value="test" />
+      <option name="PACKAGE_NAME" value="com.magneton.service.core.limiter" />
+      <option name="MAIN_CLASS_NAME" value="com.magneton.service.core.limiter.DefaultTimesLimiterTest" />
+      <option name="METHOD_NAME" value="testRemain" />
       <option name="TEST_OBJECT" value="method" />
       <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="RedisTimesLimiterTest.test2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="RedisRequestDefenceTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="service-core-spring" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.magneton.service.core.spring.limiter.*" />
+          <option name="PATTERN" value="com.magneton.service.core.spring.defence.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.magneton.service.core.spring.limiter" />
-      <option name="MAIN_CLASS_NAME" value="com.magneton.service.core.spring.limiter.RedisTimesLimiterTest" />
-      <option name="METHOD_NAME" value="test2" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="RedisTimesLimiterTest.test3" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="service-core-spring" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.magneton.service.core.spring.limiter.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.magneton.service.core.spring.limiter" />
-      <option name="MAIN_CLASS_NAME" value="com.magneton.service.core.spring.limiter.RedisTimesLimiterTest" />
-      <option name="METHOD_NAME" value="test3" />
-      <option name="TEST_OBJECT" value="method" />
+      <option name="PACKAGE_NAME" value="com.magneton.service.core.spring.defence" />
+      <option name="MAIN_CLASS_NAME" value="com.magneton.service.core.spring.defence.RedisRequestDefenceTest" />
       <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -602,6 +561,40 @@
       <option name="PACKAGE_NAME" value="com.magneton.service.core.spring.limiter" />
       <option name="MAIN_CLASS_NAME" value="com.magneton.service.core.spring.limiter.RedisTimesLimiterTest" />
       <option name="METHOD_NAME" value="test4" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="RedisTimesLimiterTest.testRemain" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="service-core-spring" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.magneton.service.core.spring.limiter.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.magneton.service.core.spring.limiter" />
+      <option name="MAIN_CLASS_NAME" value="com.magneton.service.core.spring.limiter.RedisTimesLimiterTest" />
+      <option name="METHOD_NAME" value="testRemain" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="RequestDefenceConfigurationTest.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="service-core-spring" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.magneton.service.core.spring.defence.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.magneton.service.core.spring.defence" />
+      <option name="MAIN_CLASS_NAME" value="com.magneton.service.core.spring.defence.RequestDefenceConfigurationTest" />
+      <option name="METHOD_NAME" value="test" />
       <option name="TEST_OBJECT" value="method" />
       <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
       <method v="2">
@@ -633,11 +626,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.DefaultTimesLimiterTest.testRemain" />
+        <item itemvalue="JUnit.RedisTimesLimiterTest.testRemain" />
+        <item itemvalue="JUnit.RequestDefenceConfigurationTest.test" />
+        <item itemvalue="JUnit.RedisRequestDefenceTest" />
         <item itemvalue="JUnit.RedisTimesLimiterTest.test4" />
-        <item itemvalue="JUnit.RedisTimesLimiterTest.test3" />
-        <item itemvalue="JUnit.RedisTimesLimiterTest.test2" />
-        <item itemvalue="JUnit.RedisTimesLimiterTest.test" />
-        <item itemvalue="JUnit.RedisTimesLimiterTest" />
       </list>
     </recent_temporary>
   </component>
@@ -664,51 +657,55 @@
       <workItem from="1560506183952" duration="7760000" />
       <workItem from="1560824023042" duration="2671000" />
       <workItem from="1561008983509" duration="1493000" />
-      <workItem from="1561013184476" duration="22508000" />
+      <workItem from="1561013184476" duration="23759000" />
+      <workItem from="1561703222087" duration="2594000" />
+      <workItem from="1562115291502" duration="3000" />
+      <workItem from="1562723075504" duration="32000" />
+      <workItem from="1562723273372" duration="2262000" />
+      <workItem from="1563355500091" duration="7195000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="DefaultTimesLimiterTest_test3 - 2019.06.21 at 17h 14m 14s.xml">
-      <configuration name="DefaultTimesLimiterTest.test3" configurationId="JUnit" />
+    <history-entry file="DefaultTimesLimiterTest_testRemain - 2019.07.18 at 14h 33m 42s.xml">
+      <configuration name="DefaultTimesLimiterTest.testRemain" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="DefaultTimesLimiterTest_test4 - 2019.06.21 at 17h 15m 26s.xml">
-      <configuration name="DefaultTimesLimiterTest.test4" configurationId="JUnit" />
+    <history-entry file="DefaultTimesLimiterTest_testRemain - 2019.07.18 at 14h 35m 33s.xml">
+      <configuration name="DefaultTimesLimiterTest.testRemain" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="RedisTimesLimiterTest - 2019.06.21 at 17h 19m 13s.xml">
-      <configuration name="RedisTimesLimiterTest" configurationId="JUnit" />
+    <history-entry file="DefaultTimesLimiterTest_testRemain - 2019.07.18 at 14h 53m 37s.xml">
+      <configuration name="DefaultTimesLimiterTest.testRemain" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="RedisTimesLimiterTest_test - 2019.06.21 at 17h 19m 29s.xml">
-      <configuration name="RedisTimesLimiterTest.test" configurationId="JUnit" />
+    <history-entry file="DefaultTimesLimiterTest_testRemain - 2019.07.18 at 14h 53m 42s.xml">
+      <configuration name="DefaultTimesLimiterTest.testRemain" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="RedisTimesLimiterTest_test - 2019.06.21 at 17h 20m 08s.xml">
-      <configuration name="RedisTimesLimiterTest.test" configurationId="JUnit" />
+    <history-entry file="DefaultTimesLimiterTest_testRemain - 2019.07.18 at 14h 54m 05s.xml">
+      <configuration name="DefaultTimesLimiterTest.testRemain" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="RedisTimesLimiterTest_test - 2019.06.21 at 17h 22m 22s.xml">
-      <configuration name="RedisTimesLimiterTest.test" configurationId="JUnit" />
+    <history-entry file="DefaultTimesLimiterTest_testRemain - 2019.07.18 at 14h 54m 22s.xml">
+      <configuration name="DefaultTimesLimiterTest.testRemain" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="RedisTimesLimiterTest_test - 2019.06.21 at 17h 23m 02s.xml">
-      <configuration name="RedisTimesLimiterTest.test" configurationId="JUnit" />
+    <history-entry file="DefaultTimesLimiterTest_testRemain - 2019.07.18 at 14h 54m 25s.xml">
+      <configuration name="DefaultTimesLimiterTest.testRemain" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="RedisTimesLimiterTest_test2 - 2019.06.21 at 17h 23m 35s.xml">
-      <configuration name="RedisTimesLimiterTest.test2" configurationId="JUnit" />
+    <history-entry file="RedisTimesLimiterTest_testRemain - 2019.07.18 at 14h 57m 11s.xml">
+      <configuration name="RedisTimesLimiterTest.testRemain" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="RedisTimesLimiterTest_test3 - 2019.06.21 at 17h 24m 16s.xml">
-      <configuration name="RedisTimesLimiterTest.test3" configurationId="JUnit" />
+    <history-entry file="DefaultTimesLimiterTest_testRemain - 2019.07.18 at 14h 58m 01s.xml">
+      <configuration name="DefaultTimesLimiterTest.testRemain" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="RedisTimesLimiterTest_test4 - 2019.06.21 at 17h 24m 25s.xml">
-      <configuration name="RedisTimesLimiterTest.test4" configurationId="JUnit" />
+    <history-entry file="DefaultTimesLimiterTest_testRemain - 2019.07.18 at 14h 58m 08s.xml">
+      <configuration name="DefaultTimesLimiterTest.testRemain" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="92906000" />
+    <option name="totallyTimeSpent" value="106243000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info id="Web" order="0" side_tool="true" />
-      <window_info content_ui="combo" id="Project" order="1" sideWeight="0.6703755" visible="true" weight="0.33603457" />
+      <window_info content_ui="combo" id="Project" order="1" sideWeight="0.6703755" visible="true" weight="0.2749865" />
       <window_info id="Structure" order="2" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="3" side_tool="true" />
       <window_info id="JRebel" order="4" side_tool="true" />
@@ -719,7 +716,7 @@
       <window_info anchor="bottom" id="Spring" order="2" />
       <window_info anchor="bottom" id="Find" order="3" weight="0.32855436" />
       <window_info anchor="bottom" id="Run" order="4" weight="0.32896304" />
-      <window_info anchor="bottom" x="314" y="364" width="1358" height="439" id="Debug" order="5" weight="0.3548387" />
+      <window_info anchor="bottom" x="314" y="364" width="1358" height="439" id="Debug" order="5" weight="0.4516129" />
       <window_info anchor="bottom" id="Run with VisualVM" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="TODO" order="8" />
@@ -728,7 +725,7 @@
       <window_info anchor="bottom" id="SonarLint" order="11" />
       <window_info anchor="bottom" id="Tail" order="12" />
       <window_info anchor="bottom" id="Database Changes" order="13" />
-      <window_info anchor="bottom" id="Terminal" order="14" weight="0.49462366" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="14" sideWeight="0.49970222" visible="true" weight="0.4516129" />
       <window_info anchor="bottom" id="JRebel Console" order="15" side_tool="true" />
       <window_info anchor="bottom" id="JRebel Executor" order="16" />
       <window_info anchor="bottom" id="Debug with VisualVM" order="17" />
@@ -740,8 +737,8 @@
       <window_info anchor="bottom" id="Problems" order="23" />
       <window_info anchor="bottom" id="Changes" order="24" />
       <window_info anchor="bottom" id="Profiler" order="25" />
-      <window_info anchor="bottom" id="Event Log" order="26" side_tool="true" />
-      <window_info active="true" anchor="bottom" id="Messages" order="27" visible="true" weight="0.2986858" />
+      <window_info anchor="bottom" id="Event Log" order="26" sideWeight="0.5002978" side_tool="true" weight="0.32402912" />
+      <window_info anchor="bottom" id="Messages" order="27" weight="0.2986858" />
       <window_info anchor="bottom" id="Ant Build" order="28" weight="0.1825" />
       <window_info anchor="right" id="Bean Validation" order="0" weight="0.3295516" />
       <window_info anchor="right" id="Mybatis datasource" order="1" side_tool="true" />
@@ -751,14 +748,27 @@
       <window_info anchor="right" id="Database" order="5" weight="0.3295516" />
       <window_info anchor="right" id="Palette" order="6" />
       <window_info anchor="right" id="Maven Projects" order="7" />
-      <window_info anchor="right" id="Maven" order="8" weight="0.3295516" />
+      <window_info anchor="right" id="Maven" order="8" weight="0.32936272" />
       <window_info anchor="right" id="Key Promoter X" order="9" weight="0.3295516" />
       <window_info anchor="right" id="ASM" order="10" weight="0.3295516" />
       <window_info anchor="right" id="Palette&#9;" order="11" />
+      <window_info anchor="right" id="JOL" order="12" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/service-core/src/main/java/com/magneton/service/core/defence/GuavaCacheRequestDefence.java</url>
+          <line>51</line>
+          <properties />
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
   <component name="antWorkspaceConfiguration">
     <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
@@ -774,102 +784,6 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/tomcat/embed/tomcat-embed-core/9.0.19/tomcat-embed-core-9.0.19-sources.jar!/org/apache/coyote/Request.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="5365">
-          <caret line="230" column="24" selection-start-line="230" selection-start-column="24" selection-end-line="230" selection-end-column="24" />
-          <folding>
-            <element signature="e#7461#7462#0" expanded="true" />
-            <element signature="e#7489#7490#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/service-core/src/test/java/com/magneton/service/core/signuature/AbstractSignatureBuilderTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1218">
-          <caret line="59" column="26" selection-start-line="59" selection-start-column="26" selection-end-line="59" selection-end-column="26" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/service-core/src/test/java/com/magneton/service/core/signuature/TimeoutValidatorTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1943">
-          <caret line="70" selection-start-line="70" selection-end-line="70" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/service-support-druid-spring/src/main/java/com/magneton/service/support/druid/util/DataUtils.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="188">
-          <caret line="15" column="46" selection-start-line="15" selection-start-column="46" selection-end-line="15" selection-end-column="46" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="296">
-          <caret line="29" selection-start-line="29" selection-end-line="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/service-core-spring/pom.xml">
-      <provider editor-type-id="MavenHelperPluginDependencyAnalyzer" />
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-391">
-          <caret line="36" column="49" selection-start-line="36" selection-start-column="49" selection-end-line="36" selection-end-column="49" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/service-support-druid-spring/pom.xml">
-      <provider editor-type-id="MavenHelperPluginDependencyAnalyzer" />
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="160">
-          <caret line="29" column="37" selection-start-line="29" selection-start-column="37" selection-end-line="29" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/service-core/src/main/java/com/magneton/service/core/api/SmsManager.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="290">
-          <caret line="10" column="12" selection-start-line="10" selection-start-column="12" selection-end-line="10" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/service-core/src/main/java/com/magneton/service/core/signature/DefaultHttpServletRequestSignature.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2294">
-          <caret line="231" column="26" lean-forward="true" selection-start-line="231" selection-start-column="26" selection-end-line="231" selection-end-column="26" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider editor-type-id="MavenHelperPluginDependencyAnalyzer" />
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-116">
-          <caret line="11" column="37" selection-start-line="11" selection-start-column="37" selection-end-line="11" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springmodules/spring-modules-cache/0.8/spring-modules-cache-0.8.jar!/org/springmodules/cache/annotations/Cacheable.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="145">
-          <caret line="13" selection-start-line="13" selection-end-line="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/org/springmodules/spring-modules-cache/0.8/spring-modules-cache-0.8.jar!/org/springmodules/cache/annotations/CacheFlush.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="290">
@@ -920,20 +834,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-4142">
           <caret line="32" column="22" selection-start-line="32" selection-start-column="22" selection-end-line="32" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/service-core/src/main/java/com/magneton/service/core/Configurable.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="232">
-          <caret line="8" column="23" selection-start-line="8" selection-start-column="9" selection-end-line="8" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/service-core/src/test/java/com/magneton/service/core/defence/GuavaCacheRequestDefenceTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="343">
-          <caret line="63" lean-forward="true" selection-start-line="63" selection-end-line="63" />
         </state>
       </provider>
     </entry>
@@ -1008,38 +908,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://C:/Program Files/Java/jdk8/src.zip!/java/lang/String.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-281">
-          <caret line="1464" column="15" selection-start-line="1464" selection-start-column="15" selection-end-line="1464" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://C:/Program Files/Java/jdk8/src.zip!/java/util/Map.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="79">
           <caret line="163" column="7" lean-forward="true" selection-start-line="163" selection-start-column="7" selection-end-line="163" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/service-core/src/main/java/com/magneton/service/core/defence/RequestDefenceConfig.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="29">
-          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/service-core-spring/src/main/java/com/magneton/service/core/spring/defence/RequestDefenceConfiguration.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="319">
-          <caret line="30" column="59" lean-forward="true" selection-start-line="30" selection-start-column="59" selection-end-line="30" selection-end-column="59" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/service-core-spring/src/main/java/com/magneton/service/core/spring/defence/RequestDefenceProperties.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="336">
-          <caret line="36" column="5" lean-forward="true" selection-start-line="16" selection-start-column="4" selection-end-line="36" selection-end-column="5" />
         </state>
       </provider>
     </entry>
@@ -1050,58 +922,230 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/service-core-spring/src/main/java/com/magneton/service/core/spring/defence/RedisRequestDefence.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="232">
-          <caret line="11" column="32" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="32" />
+    <entry file="file://$PROJECT_DIR$/service-core-spring/src/test/java/com/magneton/service/core/spring/limiter/TimesLimiterPropertiesTest.java" />
+    <entry file="file://$PROJECT_DIR$/document/安全组件-请求防御.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="1305">
+            <caret line="45" column="7" selection-start-line="45" selection-start-column="7" selection-end-line="45" selection-end-column="7" />
+          </first_editor>
+          <second_editor />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/service-core-spring/src/test/java/com/magneton/service/core/spring/limiter/TimesLimiterPropertiesTest.java">
+    <entry file="file://$PROJECT_DIR$/service-core/src/main/java/com/magneton/service/core/defence/RequestDefenceConfig.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="145">
-          <caret line="19" column="42" lean-forward="true" selection-start-line="19" selection-start-column="42" selection-end-line="19" selection-end-column="42" />
+        <state relative-caret-position="522">
+          <caret line="20" column="27" lean-forward="true" selection-start-line="20" selection-start-column="27" selection-end-line="20" selection-end-column="27" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/service-core-spring/src/test/java/com/magneton/service/core/spring/defence/RequestDefenceConfigurationTest.java">
+    <entry file="jar://C:/Program Files/Java/jdk8/src.zip!/java/lang/String.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="196">
-          <caret line="19" column="13" selection-start-line="19" selection-start-column="13" selection-end-line="19" selection-end-column="13" />
+        <state relative-caret-position="243">
+          <caret line="110" column="19" selection-start-line="110" selection-start-column="19" selection-end-line="110" selection-end-column="19" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/service-core-spring/src/main/java/com/magneton/service/core/spring/limiter/TimesLimiterConfiguration.java">
+    <entry file="file://$PROJECT_DIR$/service-core/src/test/java/com/magneton/service/core/defence/GuavaCacheRequestDefenceTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret line="15" column="14" selection-start-line="15" selection-start-column="14" selection-end-line="15" selection-end-column="14" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="555">
+          <caret line="79" column="31" lean-forward="true" selection-start-line="79" selection-start-column="31" selection-end-line="79" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/boot/spring-boot-autoconfigure/2.1.4.RELEASE/spring-boot-autoconfigure-2.1.4.RELEASE-sources.jar!/org/springframework/boot/autoconfigure/condition/OnBeanCondition.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="203">
+          <caret line="69" column="6" selection-start-line="69" selection-start-column="6" selection-end-line="69" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/boot/spring-boot-autoconfigure/2.1.4.RELEASE/spring-boot-autoconfigure-2.1.4.RELEASE-sources.jar!/org/springframework/boot/autoconfigure/condition/ConditionalOnMissingBean.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="214">
+          <caret line="62" column="18" selection-start-line="62" selection-start-column="18" selection-end-line="62" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/boot/spring-boot-autoconfigure/2.1.4.RELEASE/spring-boot-autoconfigure-2.1.4.RELEASE-sources.jar!/org/springframework/boot/autoconfigure/condition/OnClassCondition.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="243">
+          <caret line="43" column="6" selection-start-line="43" selection-start-column="6" selection-end-line="43" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/boot/spring-boot-autoconfigure/2.1.4.RELEASE/spring-boot-autoconfigure-2.1.4.RELEASE-sources.jar!/org/springframework/boot/autoconfigure/condition/ConditionalOnClass.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="214">
+          <caret line="40" column="21" selection-start-line="40" selection-start-column="21" selection-end-line="40" selection-end-column="21" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/service-core/src/main/java/com/magneton/service/core/defence/RequestDefence.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="197">
-          <caret line="13" column="17" selection-start-line="13" selection-start-column="17" selection-end-line="13" selection-end-column="17" />
+        <state relative-caret-position="247">
+          <caret line="13" column="27" selection-start-line="13" selection-start-column="27" selection-end-line="13" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/service-core-spring/src/main/java/com/magneton/service/core/spring/defence/RedisRequestDefence.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-145">
+          <caret line="13" column="40" selection-start-line="13" selection-start-column="40" selection-end-line="13" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/service-core-spring/src/test/resource/application.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="158">
+          <caret line="12" column="38" lean-forward="true" selection-start-line="12" selection-start-column="38" selection-end-line="12" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/service-core/src/main/java/com/magneton/service/core/defence/GuavaCacheRequestDefence.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1189">
+          <caret line="46" column="19" selection-start-line="46" selection-start-column="19" selection-end-line="46" selection-end-column="19" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1512#1513#0" expanded="true" />
+            <element signature="e#1549#1550#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/service-core/src/main/java/com/magneton/service/core/replacer/JsonSundayReplace.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="232">
+          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/service-core/src/main/java/com/magneton/service/core/replacer/StringMasker.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="522">
+          <caret line="18" column="54" selection-start-line="18" selection-start-column="54" selection-end-line="18" selection-end-column="54" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/service-core/src/main/java/com/magneton/service/core/replacer/StringMaskReplace.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1537">
+          <caret line="55" column="57" selection-start-line="55" selection-start-column="57" selection-end-line="55" selection-end-column="57" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/service-core/src/main/java/com/magneton/service/core/replacer/StringReplace.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="174">
+          <caret line="6" column="17" selection-start-line="6" selection-start-column="17" selection-end-line="6" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/service-core-spring/src/main/java/com/magneton/service/core/spring/defence/RequestDefenceConfiguration.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="841">
+          <caret line="36" column="29" selection-start-line="36" selection-start-column="29" selection-end-line="36" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/service-core-spring/src/main/java/com/magneton/service/core/spring/defence/RequestDefenceProperties.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="464">
+          <caret line="17" column="62" selection-start-line="17" selection-start-column="51" selection-end-line="17" selection-end-column="62" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/service-core-spring/src/test/java/com/magneton/service/core/spring/defence/RedisRequestDefenceTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="667">
+          <caret line="34" column="30" selection-start-line="34" selection-start-column="30" selection-end-line="34" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/service-core-spring/src/test/java/com/magneton/service/core/spring/defence/RequestDefenceConfigurationTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="580">
+          <caret line="27" column="45" selection-start-line="27" selection-start-column="45" selection-end-line="27" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/service-core/src/main/java/com/magneton/service/core/Configurable.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="290">
+          <caret line="10" selection-start-line="10" selection-end-line="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider editor-type-id="MavenHelperPluginDependencyAnalyzer" />
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="429">
+          <caret line="57" column="28" selection-start-line="57" selection-start-column="28" selection-end-line="57" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/service-core/pom.xml">
+      <provider editor-type-id="MavenHelperPluginDependencyAnalyzer" />
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="145">
+          <caret line="5" column="45" selection-start-line="5" selection-start-column="45" selection-end-line="5" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/.m2/settings.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="292">
+          <caret line="14" column="23" selection-start-line="14" selection-start-column="23" selection-end-line="14" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/service-core/src/main/java/com/magneton/service/core/limiter/TimesLimiter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="435">
+          <caret line="21" column="28" selection-start-line="21" selection-start-column="28" selection-end-line="21" selection-end-column="28" />
+          <folding>
+            <element signature="e#289#290#0" expanded="true" />
+            <element signature="e#339#340#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/document/安全组件-时间限制器.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="582">
+            <caret line="72" column="23" selection-start-line="72" selection-start-column="23" selection-end-line="72" selection-end-column="23" />
+          </first_editor>
+          <second_editor />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/service-core/src/main/java/com/magneton/service/core/limiter/LimiterRule.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="259">
-          <caret line="20" column="7" selection-start-line="20" selection-start-column="7" selection-end-line="20" selection-end-column="7" />
+        <state relative-caret-position="-12">
+          <caret line="6" column="10" selection-start-line="6" selection-start-column="10" selection-end-line="6" selection-end-column="10" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/service-core-spring/src/main/java/com/magneton/service/core/spring/limiter/TimesLimiterProperties.java">
+    <entry file="file://$PROJECT_DIR$/service-core/src/main/java/com/magneton/service/core/limiter/DefaultTimesLimiter.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="145">
-          <caret line="11" column="54" selection-start-line="11" selection-start-column="54" selection-end-line="11" selection-end-column="54" />
+        <state relative-caret-position="290">
+          <caret line="110" column="22" lean-forward="true" selection-start-line="110" selection-start-column="22" selection-end-line="110" selection-end-column="22" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/service-core-spring/src/test/java/com/magneton/service/core/spring/limiter/RedisTimesLimiterTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="274">
+          <caret line="65" column="32" selection-start-line="65" selection-start-column="32" selection-end-line="65" selection-end-column="32" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -1110,8 +1154,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/service-core/src/main/java/com/magneton/service/core/limiter/TimesLimiterConfig.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="190">
-          <caret line="32" column="42" selection-start-line="32" selection-start-column="42" selection-end-line="32" selection-end-column="42" />
+        <state relative-caret-position="139">
+          <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/service-core/src/test/java/com/magneton/service/core/limiter/DefaultTimesLimiterTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="364">
+          <caret line="25" column="34" selection-start-line="25" selection-start-column="34" selection-end-line="25" selection-end-column="34" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -1120,95 +1174,31 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/service-core-spring/src/main/java/com/magneton/service/core/spring/limiter/RedisTimesLimiter.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="419">
-          <caret line="39" column="58" lean-forward="true" selection-start-line="39" selection-start-column="58" selection-end-line="39" selection-end-column="58" />
+        <state relative-caret-position="406">
+          <caret line="15" column="29" lean-forward="true" selection-start-line="15" selection-start-column="29" selection-end-line="15" selection-end-column="29" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/document/安全组件-请求防御.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="435">
-            <caret line="45" column="7" selection-start-line="45" selection-start-column="7" selection-end-line="45" selection-end-column="7" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/service-core/src/main/java/com/magneton/service/core/limiter/DefaultTimesLimiter.java">
+    <entry file="file://$PROJECT_DIR$/service-core-spring/src/main/java/com/magneton/service/core/spring/limiter/TimesLimiterConfiguration.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="145">
-          <caret line="53" column="74" selection-start-line="53" selection-start-column="61" selection-end-line="53" selection-end-column="74" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1601#1602#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/service-core/src/main/java/com/magneton/service/core/limiter/TimesLimiter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="464">
-          <caret line="16" column="56" lean-forward="true" selection-start-line="16" selection-start-column="56" selection-end-line="16" selection-end-column="56" />
-          <folding>
-            <element signature="e#289#290#0" expanded="true" />
-            <element signature="e#339#340#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/service-core-spring/src/test/java/com/magneton/service/core/spring/defence/RedisRequestDefenceTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="138">
-          <caret line="19" selection-start-line="19" selection-end-line="20" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/service-core/src/test/java/com/magneton/service/core/limiter/DefaultTimesLimiterTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="48">
-          <caret line="57" column="21" selection-start-line="57" selection-start-column="21" selection-end-line="57" selection-end-column="21" />
+        <state relative-caret-position="238">
+          <caret line="13" column="28" selection-start-line="13" selection-start-column="28" selection-end-line="13" selection-end-column="28" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/document/安全组件-时间限制器.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="2204">
-            <caret line="76" column="22" selection-start-line="76" selection-start-column="22" selection-end-line="76" selection-end-column="22" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/service-core-spring/src/test/java/com/magneton/service/core/spring/limiter/RedisTimesLimiterTest.java">
+    <entry file="file://$PROJECT_DIR$/service-core-spring/src/main/java/com/magneton/service/core/spring/limiter/TimesLimiterProperties.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="290">
-          <caret line="168" column="23" selection-start-line="168" selection-start-column="23" selection-end-line="168" selection-end-column="23" />
+        <state relative-caret-position="342">
+          <caret line="25" column="37" lean-forward="true" selection-start-line="25" selection-start-column="37" selection-end-line="25" selection-end-column="37" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/service-core/pom.xml">
-      <provider editor-type-id="MavenHelperPluginDependencyAnalyzer" />
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="448">
-          <caret line="47" column="21" selection-start-line="47" selection-start-column="21" selection-end-line="47" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/service-core/src/main/java/com/magneton/service/core/defence/GuavaCacheRequestDefence.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="145">
-          <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
         </state>
       </provider>
     </entry>

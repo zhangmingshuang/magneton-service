@@ -17,13 +17,6 @@ import org.springframework.data.redis.core.RedisTemplate;
 @EnableConfigurationProperties(RequestDefenceProperties.class)
 public class RequestDefenceConfiguration {
 
-    @Bean
-    @ConditionalOnMissingBean(RequestDefence.class)
-    public RequestDefence requestDefence(RequestDefenceProperties properties) {
-        RequestDefence defence = new GuavaCacheRequestDefence();
-        defence.afterConfigSet(properties);
-        return defence;
-    }
 
     @Bean
     @ConditionalOnClass(RedisTemplate.class)
@@ -35,6 +28,14 @@ public class RequestDefenceConfiguration {
         } else {
             defence = new RedisRequestDefence(redisTemplate);
         }
+        defence.afterConfigSet(properties);
+        return defence;
+    }
+
+    @Bean
+    @ConditionalOnMissingBean(RequestDefence.class)
+    public RequestDefence requestDefence(RequestDefenceProperties properties) {
+        RequestDefence defence = new GuavaCacheRequestDefence();
         defence.afterConfigSet(properties);
         return defence;
     }
