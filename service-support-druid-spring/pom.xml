@@ -10,6 +10,7 @@
     <modelVersion>4.0.0</modelVersion>
 
     <artifactId>service-support-druid-spring</artifactId>
+    <version>1.0.0</version>
 
     <dependencyManagement>
         <dependencies>

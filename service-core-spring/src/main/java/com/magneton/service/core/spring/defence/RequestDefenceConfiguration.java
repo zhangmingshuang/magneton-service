@@ -2,6 +2,7 @@ package com.magneton.service.core.spring.defence;
 
 import com.magneton.service.core.defence.GuavaCacheRequestDefence;
 import com.magneton.service.core.defence.RequestDefence;
+import org.springframework.boot.autoconfigure.condition.ConditionalOnBean;
 import org.springframework.boot.autoconfigure.condition.ConditionalOnClass;
 import org.springframework.boot.autoconfigure.condition.ConditionalOnMissingBean;
 import org.springframework.boot.context.properties.EnableConfigurationProperties;
@@ -17,9 +18,8 @@ import org.springframework.data.redis.core.RedisTemplate;
 @EnableConfigurationProperties(RequestDefenceProperties.class)
 public class RequestDefenceConfiguration {
 
-
     @Bean
-    @ConditionalOnClass(RedisTemplate.class)
+    @ConditionalOnBean(RedisTemplate.class)
     public RequestDefence requestDefence(RedisTemplate redisTemplate,
                                          RequestDefenceProperties properties) {
         RequestDefence defence;

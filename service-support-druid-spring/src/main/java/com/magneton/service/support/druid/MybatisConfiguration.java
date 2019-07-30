@@ -22,9 +22,10 @@ public class MybatisConfiguration {
 
     @Bean
     @Primary
-    @ConditionalOnClass(name = "org.mybatis.spring.boot.autoconfigure.MybatisProperties")
+    @ConditionalOnClass(MybatisProperties.class)
     public MybatisProperties mybatisProperties(
-            @Autowired MybatisPropertiesSupport[] mybatisPropertiesSupport) {
+            @Autowired MybatisPropertiesSupport[] mybatisPropertiesSupport,
+            @Autowired(required = false) org.apache.ibatis.session.Configuration configuration) {
 
         final Logger LOGGER = LoggerFactory.getLogger(MybatisConfiguration.class);
 
@@ -36,6 +37,11 @@ public class MybatisConfiguration {
         }
         String[] mappers = new String[locations.size()];
         MybatisProperties mybatisProperties = new MybatisProperties();
+        if (configuration == null) {
+            configuration = new org.apache.ibatis.session.Configuration();
+            configuration.setMapUnderscoreToCamelCase(true);
+        }
+        mybatisProperties.setConfiguration(configuration);
         mybatisProperties.setMapperLocations(locations.toArray(mappers));
         return mybatisProperties;
     }

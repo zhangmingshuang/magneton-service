@@ -1,5 +1,6 @@
 package com.magneton.service.core.spring.limiter;
 
+import com.magneton.service.core.MagnetonConstants;
 import com.magneton.service.core.limiter.TimesLimiterConfig;
 import org.springframework.boot.context.properties.ConfigurationProperties;
 
@@ -12,7 +13,7 @@ import org.springframework.boot.context.properties.ConfigurationProperties;
 @ConfigurationProperties(
         prefix = TimesLimiterProperties.PREFIX, ignoreInvalidFields = true)
 public class TimesLimiterProperties extends TimesLimiterConfig {
-    public static final String PREFIX = "magneton.limiter.times";
+    public static final String PREFIX = MagnetonConstants.PROPERTIES_PREFIX + ".limiter.times";
 
 
     public static final String MODE_LOCAL = "local";

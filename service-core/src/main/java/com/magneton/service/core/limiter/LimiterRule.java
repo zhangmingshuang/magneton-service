@@ -23,7 +23,7 @@ public class LimiterRule {
     private int expireIn = 3600;
 
     public int getTimes() {
-        return times < 0 ? 3600 : 0;
+        return times < 0 ? 3600 : times;
     }
 
     public int getExpireIn() {

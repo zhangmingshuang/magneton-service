@@ -2,6 +2,7 @@ package com.magneton.service.core.spring.limiter;
 
 import com.magneton.service.core.limiter.DefaultTimesLimiter;
 import com.magneton.service.core.limiter.TimesLimiter;
+import org.springframework.boot.autoconfigure.condition.ConditionalOnBean;
 import org.springframework.boot.autoconfigure.condition.ConditionalOnClass;
 import org.springframework.boot.autoconfigure.condition.ConditionalOnMissingBean;
 import org.springframework.boot.context.properties.EnableConfigurationProperties;
@@ -29,7 +30,7 @@ public class TimesLimiterConfiguration {
     }
 
     @Bean
-    @ConditionalOnClass(RedisTemplate.class)
+    @ConditionalOnBean(RedisTemplate.class)
     public TimesLimiter timesLimiter(RedisTemplate redisTemplate,
                                      TimesLimiterProperties properties) {
         TimesLimiter timesLimiter;

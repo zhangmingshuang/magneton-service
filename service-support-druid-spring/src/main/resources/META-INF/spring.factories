@@ -1,0 +1,2 @@
+org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
+  com.magneton.service.support.druid.DruidAutoConfiguration

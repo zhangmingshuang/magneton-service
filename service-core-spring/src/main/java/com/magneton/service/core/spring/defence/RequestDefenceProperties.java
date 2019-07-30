@@ -1,5 +1,6 @@
 package com.magneton.service.core.spring.defence;
 
+import com.magneton.service.core.MagnetonConstants;
 import com.magneton.service.core.defence.RequestDefenceConfig;
 import org.springframework.boot.context.properties.ConfigurationProperties;
 
@@ -12,7 +13,7 @@ import org.springframework.boot.context.properties.ConfigurationProperties;
         prefix = RequestDefenceProperties.PREFIX, ignoreInvalidFields = true)
 public class RequestDefenceProperties extends RequestDefenceConfig {
 
-    public static final String PREFIX = "magneton.request.defence";
+    public static final String PREFIX = MagnetonConstants.PROPERTIES_PREFIX + ".request.defence";
 
     public static final String MODE_LOCAL = "local";
     public static final String MODE_DISTRIBUTED = "distributed";
