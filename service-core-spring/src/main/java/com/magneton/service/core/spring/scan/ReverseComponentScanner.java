@@ -1,6 +1,7 @@
 package com.magneton.service.core.spring.scan;
 
-import com.magneton.service.core.MagnetonLogger;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.support.BeanDefinitionRegistry;
 import org.springframework.context.ResourceLoaderAware;
 import org.springframework.context.annotation.ClassPathBeanDefinitionScanner;
@@ -20,6 +21,8 @@ import java.util.List;
  */
 public class ReverseComponentScanner implements ImportBeanDefinitionRegistrar, ResourceLoaderAware {
 
+    private static final Logger LOGGER = LoggerFactory.getLogger(ReverseComponentScanner.class);
+
     private ResourceLoader resourceLoader;
 
     @Override
@@ -28,17 +31,22 @@ public class ReverseComponentScanner implements ImportBeanDefinitionRegistrar, R
 
     }
 
+    public ClassPathBeanDefinitionScanner createScanner(BeanDefinitionRegistry registry) {
+        ClassPathBeanDefinitionScanner scanner = new ClassPathBeanDefinitionScanner(registry);
+
+        if (resourceLoader != null) {
+            scanner.setResourceLoader(resourceLoader);
+        }
+        return scanner;
+    }
+
     @Override
     public void registerBeanDefinitions(AnnotationMetadata importingClassMetadata,
                                         BeanDefinitionRegistry registry) {
         MultiValueMap<String, Object> allAnnotationAttributes
                 = importingClassMetadata.getAllAnnotationAttributes(ReverseComponentScan.class.getName());
 
-        ClassPathBeanDefinitionScanner scanner = new ClassPathBeanDefinitionScanner(registry);
-
-        if (resourceLoader != null) {
-            scanner.setResourceLoader(resourceLoader);
-        }
+        ClassPathBeanDefinitionScanner scanner = this.createScanner(registry);
 
         final List<String> basePackages = new ArrayList<>();
         allAnnotationAttributes.forEach((key, list) -> {
@@ -46,7 +54,7 @@ public class ReverseComponentScanner implements ImportBeanDefinitionRegistrar, R
                 String[] values = (String[]) list.get(i);
                 for (String pkg : values) {
                     if (StringUtils.hasText(pkg)) {
-                        MagnetonLogger.debug("ReverseComponentScanner >> add package {}.", pkg);
+                        LOGGER.info("ReverseComponentScanner >> add package [{}]", pkg);
                         basePackages.add(pkg);
                     }
                 }

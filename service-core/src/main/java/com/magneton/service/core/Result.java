@@ -1,5 +1,9 @@
 package com.magneton.service.core;
 
+import lombok.Getter;
+import lombok.ToString;
+
+import java.util.Collections;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -7,7 +11,13 @@ import java.util.Map;
  * @author zhangmingshuang
  * @since 2019/6/3
  */
+@ToString
 public class Result<T> {
+
+    public static final String ERROR = "操作失败";
+    public static final int ERROR_CODE = 1;
+    public static final String SUCCESS = "操作成功";
+    public static final int SUCCESS_CODE = 0;
 
     private int code;
     private String info;
@@ -53,16 +63,23 @@ public class Result<T> {
 
     public final static Result success() {
         Result result = new Result();
-        result.code = ResultCodeFactory.getSuccessCode();
-        result.info = ResultCodeFactory.getSuccessCodeDesc();
+        result.code = SUCCESS_CODE;
+        result.info = SUCCESS;
         return result;
 
     }
 
     public final static Result fail() {
         Result result = new Result();
-        result.code = ResultCodeFactory.getErrorCode();
-        result.info = ResultCodeFactory.getErrorCodeDesc();
+        result.code = ERROR_CODE;
+        result.info = ERROR;
+        return result;
+    }
+
+    public final static Result fail(String info) {
+        Result result = new Result();
+        result.code = ERROR_CODE;
+        result.info = info;
         return result;
     }
 
@@ -108,5 +125,54 @@ public class Result<T> {
         public Result<T> build() {
             return result;
         }
+    }
+
+
+    public int getCode() {
+        return code;
+    }
+
+    public String getInfo() {
+        return info;
+    }
+
+    public T getData() {
+        return data;
+    }
+
+    public long getTimestamp() {
+        return timestamp;
+    }
+
+    public boolean isSuccess() {
+        return success;
+    }
+
+    public Map<String, Object> getAdditional() {
+        return additional == null ? Collections.emptyMap() : additional;
+    }
+
+    public void setCode(int code) {
+        this.code = code;
+    }
+
+    public void setInfo(String info) {
+        this.info = info;
+    }
+
+    public void setData(T data) {
+        this.data = data;
+    }
+
+    public void setTimestamp(long timestamp) {
+        this.timestamp = timestamp;
+    }
+
+    public void setSuccess(boolean success) {
+        this.success = success;
+    }
+
+    public void setAdditional(Map<String, Object> additional) {
+        this.additional = additional;
     }
 }

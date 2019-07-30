@@ -6,10 +6,15 @@ import com.alibaba.druid.support.http.WebStatFilter;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.boot.autoconfigure.AutoConfigureAfter;
 import org.springframework.boot.web.servlet.FilterRegistrationBean;
 import org.springframework.boot.web.servlet.ServletRegistrationBean;
 import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.Import;
+import org.springframework.core.Ordered;
+import org.springframework.core.PriorityOrdered;
+import org.springframework.core.annotation.Order;
 
 import javax.sql.DataSource;
 
@@ -17,18 +22,26 @@ import javax.sql.DataSource;
  * @author zhangmingshuang
  * @since 2019/6/3
  */
+@Configuration
 @Import({
-        DruidProperties.class,
-        MybatisConfiguration.class
+        DruidProperties.class
 })
-public class DruidAutoConfiguration {
+@Order(Ordered.HIGHEST_PRECEDENCE + 10)
+public class DruidAutoConfiguration implements PriorityOrdered {
 
     private static final Logger LOGGER
             = LoggerFactory.getLogger(DruidAutoConfiguration.class);
 
+    public DruidAutoConfiguration() {
+    }
 
     @Autowired
     private DruidProperties config;
+
+    @Override
+    public int getOrder() {
+        return Ordered.HIGHEST_PRECEDENCE + 10;
+    }
 
     @Bean
     public ServletRegistrationBean druidServlet() {

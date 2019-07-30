@@ -55,8 +55,6 @@ x
 Hservice-core/src/main/java/com/magneton/service/core/MagnetonLogger.java,d\2\d29d8eb34943d4ee4e4868a8817cd7bd8edeb467
 p
 @service-core/src/main/java/com/magneton/service/core/Result.java,e\3\e335d10234cc57d639b3410da266422473b0f0e2
-{
-Kservice-core/src/main/java/com/magneton/service/core/ResultCodeFactory.java,b\2\b28f7b1f8ffb82127f850d241093bcae88df2564
 „
 Tservice-core/src/main/java/com/magneton/service/core/replacer/StringMaskReplace.java,4\7\47169ea49d0286b7c41458e863d36a4bda5642a1
 €
@@ -86,8 +84,6 @@ Yservice-core/src/test/java/com/magneton/service/core/signuature/TimeoutValidato
 aservice-core/src/test/java/com/magneton/service/core/signuature/AbstractSignatureBuilderTest.java,1\e\1e661eca5d154a07171aa72109f6f6deca817674
 ›
 kservice-core/src/test/java/com/magneton/service/core/signuature/DefaultHttpServletRequestSignatureTest.java,6\5\6555d714ca603993a63a9365b9bb15d727ba4acb
-—
-gservice-support-druid-spring/src/main/java/com/magneton/service/support/druid/MybatisConfiguration.java,9\3\93d7d46d6cd372843ca172bf7b35dfdcd59f8678
 ›
 kservice-support-druid-spring/src/main/java/com/magneton/service/support/druid/MybatisPropertiesSupport.java,5\7\572bb325384d406709284e57f309f610fb1fd10a
 ’
@@ -134,3 +130,7 @@ N
 ^service-core/src/main/java/com/magneton/service/core/exception/UnsupportedMethodException.java,0\2\02fad93cb78551c318591a947f7ad6d0690924c4
 {
 Kservice-core/src/main/java/com/magneton/service/core/MagnetonConstants.java,2\a\2a6837bc7a48f3c09319a908e57a620d29481999
+—
+gservice-core-spring/src/main/java/com/magneton/service/core/spring/redis/MultiRedisTemplateFactory.java,d\b\db4568171904377a33af1e1862a37d5227230513
+›
+kservice-support-druid-spring/src/main/java/com/magneton/service/support/druid/MybatisAutoConfiguration.java,d\d\dd66da0663ea64cc956523c842dabfe6c7838aa7

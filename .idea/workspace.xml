@@ -2,22 +2,29 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="acd58b7d-afc6-4f52-b046-7a64307bfedf" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/service-core/src/main/java/com/magneton/service/core/MagnetonConstants.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/service-core/src/main/java/com/magneton/service/core/exception/UnsupportedMethodException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/service-core/src/main/java/com/magneton/service/core/util/LRUCache.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/service-support-druid-spring/src/main/resources/META-INF/spring.factories" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service-core-spring/src/main/java/com/magneton/service/core/spring/automation/AutomationHandlerInterceptor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service-core-spring/src/main/java/com/magneton/service/core/spring/automation/AutomationInitialize.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service-core-spring/src/main/java/com/magneton/service/core/spring/automation/AutomationInitializeImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service-core-spring/src/main/java/com/magneton/service/core/spring/automation/AutomationResourceHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service-core-spring/src/main/java/com/magneton/service/core/spring/automation/AutomationWebMvcConfigurer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service-core-spring/src/main/java/com/magneton/service/core/spring/automation/ResourceHandlerMapping.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service-core-spring/src/main/java/com/magneton/service/core/spring/converter/FastjsonHttpMessageConverters.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service-core-spring/src/main/java/com/magneton/service/core/spring/converter/FastjsonHttpMessageConvertersConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service-core-spring/src/main/java/com/magneton/service/core/spring/scan/MagnetonModule.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service-core-spring/src/main/java/com/magneton/service/core/spring/scan/ModuleReverserComponentScan.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service-support-druid-spring/src/main/java/com/magneton/service/support/druid/MybatisAutoConfiguration.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service-core-spring/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/service-core-spring/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service-core-spring/src/main/java/com/magneton/service/core/spring/defence/RequestDefenceConfiguration.java" beforeDir="false" afterPath="$PROJECT_DIR$/service-core-spring/src/main/java/com/magneton/service/core/spring/defence/RequestDefenceConfiguration.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service-core-spring/src/main/java/com/magneton/service/core/spring/defence/RequestDefenceProperties.java" beforeDir="false" afterPath="$PROJECT_DIR$/service-core-spring/src/main/java/com/magneton/service/core/spring/defence/RequestDefenceProperties.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service-core-spring/src/main/java/com/magneton/service/core/spring/limiter/TimesLimiterConfiguration.java" beforeDir="false" afterPath="$PROJECT_DIR$/service-core-spring/src/main/java/com/magneton/service/core/spring/limiter/TimesLimiterConfiguration.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service-core-spring/src/main/java/com/magneton/service/core/spring/limiter/TimesLimiterProperties.java" beforeDir="false" afterPath="$PROJECT_DIR$/service-core-spring/src/main/java/com/magneton/service/core/spring/limiter/TimesLimiterProperties.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service-core/src/main/java/com/magneton/service/core/limiter/LimiterRule.java" beforeDir="false" afterPath="$PROJECT_DIR$/service-core/src/main/java/com/magneton/service/core/limiter/LimiterRule.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service-core/src/main/java/com/magneton/service/core/util/SegmentLocks.java" beforeDir="false" afterPath="$PROJECT_DIR$/service-core/src/main/java/com/magneton/service/core/util/SegmentLocks.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service-support-druid-spring/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/service-support-druid-spring/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service-core-spring/src/main/java/com/magneton/service/core/spring/scan/ReverseComponentScanner.java" beforeDir="false" afterPath="$PROJECT_DIR$/service-core-spring/src/main/java/com/magneton/service/core/spring/scan/ReverseComponentScanner.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service-core/src/main/java/com/magneton/service/core/MagnetonConstants.java" beforeDir="false" afterPath="$PROJECT_DIR$/service-core/src/main/java/com/magneton/service/core/MagnetonConstants.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service-core/src/main/java/com/magneton/service/core/MagnetonLogger.java" beforeDir="false" afterPath="$PROJECT_DIR$/service-core/src/main/java/com/magneton/service/core/MagnetonLogger.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service-core/src/main/java/com/magneton/service/core/Result.java" beforeDir="false" afterPath="$PROJECT_DIR$/service-core/src/main/java/com/magneton/service/core/Result.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service-core/src/main/java/com/magneton/service/core/ResultCodeFactory.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/service-starter-spring/src/main/java/com/magneton/service/spring/boot/MagnetonServiceAutoConfiguration.java" beforeDir="false" afterPath="$PROJECT_DIR$/service-starter-spring/src/main/java/com/magneton/service/spring/boot/MagnetonServiceAutoConfiguration.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service-support-druid-spring/src/main/java/com/magneton/service/support/druid/DruidAutoConfiguration.java" beforeDir="false" afterPath="$PROJECT_DIR$/service-support-druid-spring/src/main/java/com/magneton/service/support/druid/DruidAutoConfiguration.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/service-support-druid-spring/src/main/java/com/magneton/service/support/druid/MybatisConfiguration.java" beforeDir="false" afterPath="$PROJECT_DIR$/service-support-druid-spring/src/main/java/com/magneton/service/support/druid/MybatisConfiguration.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service-support-druid-spring/src/main/java/com/magneton/service/support/druid/MybatisPropertiesSupport.java" beforeDir="false" afterPath="$PROJECT_DIR$/service-support-druid-spring/src/main/java/com/magneton/service/support/druid/MybatisPropertiesSupport.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service-support-druid-spring/src/main/resources/META-INF/spring.factories" beforeDir="false" afterPath="$PROJECT_DIR$/service-support-druid-spring/src/main/resources/META-INF/spring.factories" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -56,38 +63,64 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="450">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/service-core-spring/src/main/java/com/magneton/service/core/spring/defence/RequestDefenceConfiguration.java">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/service-core/src/main/java/com/magneton/service/core/Result.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="29">
-              <caret line="21" column="43" selection-start-line="21" selection-start-column="43" selection-end-line="21" selection-end-column="43" />
+            <state relative-caret-position="73">
+              <caret line="148" column="5" lean-forward="true" selection-start-line="148" selection-start-column="5" selection-end-line="148" selection-end-column="5" />
+              <folding>
+                <element signature="e#2899#2900#0" expanded="true" />
+                <element signature="e#2926#2927#0" expanded="true" />
+                <element signature="e#2957#2958#0" expanded="true" />
+                <element signature="e#2984#2985#0" expanded="true" />
+                <element signature="e#3010#3011#0" expanded="true" />
+                <element signature="e#3037#3038#0" expanded="true" />
+                <element signature="e#3071#3072#0" expanded="true" />
+                <element signature="e#3103#3104#0" expanded="true" />
+                <element signature="e#3137#3138#0" expanded="true" />
+                <element signature="e#3167#3168#0" expanded="true" />
+                <element signature="e#3217#3218#0" expanded="true" />
+                <element signature="e#3250#3251#0" expanded="true" />
+                <element signature="e#3363#3364#0" expanded="true" />
+                <element signature="e#3395#3396#0" expanded="true" />
+                <element signature="e#3435#3436#0" expanded="true" />
+                <element signature="e#3467#3468#0" expanded="true" />
+                <element signature="e#3502#3503#0" expanded="true" />
+                <element signature="e#3534#3535#0" expanded="true" />
+                <element signature="e#3582#3583#0" expanded="true" />
+                <element signature="e#3624#3625#0" expanded="true" />
+                <element signature="e#3671#3672#0" expanded="true" />
+                <element signature="e#3709#3710#0" expanded="true" />
+                <element signature="e#3774#3775#0" expanded="true" />
+                <element signature="e#3818#3819#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/service-core-spring/src/main/java/com/magneton/service/core/spring/redis/MultiRedisTemplateFactory.java">
+        <entry file="jar://C:/Program Files/Java/jdk8/src.zip!/java/util/Collections.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="145">
-              <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
+            <state relative-caret-position="205">
+              <caret line="4519" column="31" lean-forward="true" selection-start-line="4519" selection-start-column="31" selection-end-line="4519" selection-end-column="31" />
+              <folding>
+                <element signature="e#178258#178259#0" expanded="true" />
+                <element signature="e#178301#178302#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/service-core-spring/src/main/java/com/magneton/service/core/spring/redis/MultiRedisProperties.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="290">
-              <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
-            </state>
-          </provider>
+        <entry file="file://$PROJECT_DIR$/service-core-spring/src/main/java/com/magneton/service/core/spring/automation/AutomationInitialize.java">
+          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/service-core-spring/src/main/java/com/magneton/service/core/spring/limiter/TimesLimiterConfiguration.java">
+        <entry file="file://$PROJECT_DIR$/service-core-spring/src/main/java/com/magneton/service/core/spring/automation/AutomationHandlerInterceptor.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="261">
-              <caret line="32" column="4" selection-start-line="32" selection-start-column="4" selection-end-line="32" selection-end-column="43" />
+            <state relative-caret-position="288">
+              <caret line="78" column="20" lean-forward="true" selection-start-line="78" selection-start-column="20" selection-end-line="78" selection-end-column="20" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -96,58 +129,58 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/service-support-druid-spring/pom.xml">
-          <provider editor-type-id="MavenHelperPluginDependencyAnalyzer" />
+        <entry file="file://$PROJECT_DIR$/service-core-spring/src/main/java/com/magneton/service/core/spring/automation/AutomationInitializeImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-627">
-              <caret line="24" column="27" lean-forward="true" selection-start-line="24" selection-start-column="27" selection-end-line="24" selection-end-column="27" />
+            <state relative-caret-position="276">
+              <caret line="46" column="67" selection-start-line="46" selection-start-column="67" selection-end-line="46" selection-end-column="67" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/service-support-druid-spring/src/main/java/com/magneton/service/support/druid/DruidAutoConfiguration.java">
+        <entry file="file://$PROJECT_DIR$/service-core-spring/src/main/java/com/magneton/service/core/spring/automation/AutomationResourceHandler.java">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/service-core-spring/src/main/java/com/magneton/service/core/spring/automation/AutomationWebMvcConfigurer.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="137">
-              <caret line="21" column="21" selection-start-line="21" selection-start-column="21" selection-end-line="21" selection-end-column="21" />
+            <state relative-caret-position="404">
+              <caret line="44" column="24" selection-start-line="44" selection-start-column="24" selection-end-line="44" selection-end-column="24" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/service-support-druid-spring/src/main/resources/META-INF/spring.factories">
+        <entry file="file://$PROJECT_DIR$/service-core-spring/src/main/java/com/magneton/service/core/spring/converter/FastjsonHttpMessageConverters.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="29">
-              <caret line="1" column="50" lean-forward="true" selection-start-line="1" selection-start-column="50" selection-end-line="1" selection-end-column="50" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/service-support-druid-spring/src/main/java/com/magneton/service/support/druid/MybatisConfiguration.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="266">
-              <caret line="29" column="44" selection-start-line="29" selection-start-column="44" selection-end-line="29" selection-end-column="44" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/service-starter-spring/pom.xml">
-          <provider editor-type-id="MavenHelperPluginDependencyAnalyzer" />
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="214">
-              <caret line="16" column="38" selection-start-line="16" selection-start-column="38" selection-end-line="16" selection-end-column="38" />
+            <state relative-caret-position="1363">
+              <caret line="53" column="38" lean-forward="true" selection-start-line="53" selection-start-column="38" selection-end-line="53" selection-end-column="38" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#1608#1609#0" expanded="true" />
+                <element signature="e#1695#1696#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/service-core-spring/pom.xml">
-          <provider editor-type-id="MavenHelperPluginDependencyAnalyzer" />
+        <entry file="file://$PROJECT_DIR$/service-core-spring/src/main/java/com/magneton/service/core/spring/converter/FastjsonHttpMessageConvertersConfig.java">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/service-core/src/main/java/com/magneton/service/core/MagnetonConstants.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="674">
-              <caret line="61" column="21" lean-forward="true" selection-start-line="61" selection-start-column="21" selection-end-line="61" selection-end-column="21" />
+            <state relative-caret-position="232">
+              <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
             </state>
           </provider>
         </entry>
@@ -157,8 +190,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="Interface" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -190,6 +223,10 @@
       <find>UNTREEIFY_THRESHOLD</find>
       <find>TreeMap</find>
       <find>DefaultTimesLimiter</find>
+      <find>tomcat</find>
+      <find>RuntimeConstant</find>
+      <find>MagnetonLogger</find>
+      <find>Result</find>
     </findStrings>
     <replaceStrings>
       <replace>StringUtil</replace>
@@ -197,6 +234,8 @@
       <replace>AbstractSignatureBuilder</replace>
       <replace>`</replace>
       <replace>afterConfigSet</replace>
+      <replace>MagnetonConstants</replace>
+      <replace>LOGGER</replace>
     </replaceStrings>
     <dirStrings>
       <dir>G:\.m2\repository2\org\springframework\data\spring-data-redis\2.1.6.RELEASE\spring-data-redis-2.1.6.RELEASE.jar!\org\springframework\data\redis</dir>
@@ -210,28 +249,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/service-core/src/main/java/com/magneton/service/core/signature/TimeoutValidator.java" />
-        <option value="$PROJECT_DIR$/service-core/src/test/java/com/magneton/service/core/signuature/DefaultHttpServletRequestSignatureTest.java" />
-        <option value="$PROJECT_DIR$/service-core/src/main/java/com/magneton/service/core/signature/DefaultHttpServletRequestSignature.java" />
-        <option value="$PROJECT_DIR$/service-support-druid-spring/src/main/java/com/magneton/service/support/druid/util/DataUtils.java" />
-        <option value="$PROJECT_DIR$/service-core/src/main/java/com/magneton/service/core/api/SmsSender.java" />
-        <option value="$PROJECT_DIR$/service-core/src/main/java/com/magneton/service/core/api/SmsManager.java" />
-        <option value="$PROJECT_DIR$/service-core/src/main/java/com/magneton/service/core/limiter/FrquencyLimiter.java" />
-        <option value="$PROJECT_DIR$/service-core/src/main/java/com/magneton/service/core/limiter/GuavaFrequenceLimiter.java" />
-        <option value="$PROJECT_DIR$/service-core/src/main/java/com/magneton/service/core/limiter/GuavaFrequencyLimiter.java" />
-        <option value="$PROJECT_DIR$/service-core/src/main/java/com/magneton/service/core/limiter/FrequencyLimiterConfig.java" />
-        <option value="$PROJECT_DIR$/service-core/src/main/java/com/magneton/service/core/Configurable.java" />
-        <option value="$PROJECT_DIR$/service-core/src/main/java/com/magneton/service/core/defence/RequestDefence.java" />
-        <option value="$PROJECT_DIR$/service-core-spring/src/main/java/com/magneton/service/core/spring/defence/RedisRequestDefence.java" />
-        <option value="$PROJECT_DIR$/service-core-spring/src/test/java/com/magneton/service/core/spring/defence/RedisRequestDefenceTest.java" />
-        <option value="$PROJECT_DIR$/service-core/src/main/java/com/magneton/service/core/limiter/GuavaTimesLimiter.java" />
-        <option value="$PROJECT_DIR$/service-core/src/main/java/com/magneton/service/core/limiter/Rule.java" />
-        <option value="$PROJECT_DIR$/service-core-spring/src/main/java/com/magneton/service/core/spring/limiter/RequestDefenceConfiguration.java" />
-        <option value="$PROJECT_DIR$/service-core-spring/src/test/java/com/magneton/service/core/spring/limiter/TimesLimiterPropertiesTest.java" />
-        <option value="$PROJECT_DIR$/document/安全组件-请求防御.md" />
-        <option value="$PROJECT_DIR$/document/安全组件-时间限制器.md" />
-        <option value="$PROJECT_DIR$/service-core/src/test/java/com/magneton/service/core/defence/GuavaCacheRequestDefenceTest.java" />
-        <option value="$PROJECT_DIR$/service-core/src/main/java/com/magneton/service/core/defence/GuavaCacheRequestDefence.java" />
         <option value="$PROJECT_DIR$/service-core-spring/src/test/java/com/magneton/service/core/spring/defence/RequestDefenceConfigurationTest.java" />
         <option value="$PROJECT_DIR$/service-core-spring/src/test/resource/application.properties" />
         <option value="$PROJECT_DIR$/service-core/pom.xml" />
@@ -252,15 +269,37 @@
         <option value="$PROJECT_DIR$/service-support-druid-spring/pom.xml" />
         <option value="$PROJECT_DIR$/service-core/src/main/java/com/magneton/service/core/exception/UnsupportMethodException.java" />
         <option value="$PROJECT_DIR$/service-core/src/main/java/com/magneton/service/core/exception/UnsupportedMethodException.java" />
-        <option value="$PROJECT_DIR$/service-core/src/main/java/com/magneton/service/core/MagnetonConstants.java" />
         <option value="$PROJECT_DIR$/service-core-spring/src/main/java/com/magneton/service/core/spring/defence/RequestDefenceProperties.java" />
         <option value="$PROJECT_DIR$/service-core-spring/src/main/java/com/magneton/service/core/spring/limiter/TimesLimiterProperties.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/service-core-spring/src/main/java/com/magneton/service/core/spring/limiter/TimesLimiterConfiguration.java" />
         <option value="$PROJECT_DIR$/service-core-spring/src/main/java/com/magneton/service/core/spring/defence/RequestDefenceConfiguration.java" />
         <option value="$PROJECT_DIR$/service-core-spring/pom.xml" />
-        <option value="$PROJECT_DIR$/service-support-druid-spring/src/main/resources/META-INF/spring.factories" />
+        <option value="$PROJECT_DIR$/service-core/src/main/java/com/magneton/service/core/ResultCodeFactory.java" />
+        <option value="$PROJECT_DIR$/service-support-druid-spring/src/main/java/com/magneton/service/support/druid/DruidProperties.java" />
+        <option value="$PROJECT_DIR$/service-support-druid-spring/src/main/java/com/magneton/service/support/druid/MybatisPropertiesSupport.java" />
+        <option value="$PROJECT_DIR$/service-starter-spring/src/main/java/com/magneton/service/spring/boot/MagnetonModule.java" />
         <option value="$PROJECT_DIR$/service-support-druid-spring/src/main/java/com/magneton/service/support/druid/MybatisConfiguration.java" />
+        <option value="$PROJECT_DIR$/service-starter-spring/src/main/java/com/magneton/service/spring/boot/MagnetonModuleLoader.java" />
+        <option value="$PROJECT_DIR$/service-core-spring/src/main/java/com/magneton/service/core/spring/scan/ModuleReverser.java" />
+        <option value="$PROJECT_DIR$/service-support-druid-spring/src/main/java/com/magneton/service/support/druid/ModuleAutoConfiguration.java" />
+        <option value="$PROJECT_DIR$/service-support-druid-spring/src/main/resources/META-INF/services/com.magneton.service.spring.boot.MagnetonModule" />
+        <option value="$PROJECT_DIR$/service-support-druid-spring/src/main/resources/META-INF/services/com.magneton.service.core.spring.scan.MagnetonModule" />
+        <option value="$PROJECT_DIR$/service-support-druid-spring/src/main/resources/META-INF/spring.factories" />
+        <option value="$PROJECT_DIR$/service-core/src/main/java/com/magneton/service/core/MagnetonLogger.java" />
+        <option value="$PROJECT_DIR$/service-core-spring/src/main/java/com/magneton/service/core/spring/scan/ReverseComponentScanner.java" />
+        <option value="$PROJECT_DIR$/service-core-spring/src/main/java/com/magneton/service/core/spring/scan/ModuleReverserComponentScan.java" />
+        <option value="$PROJECT_DIR$/service-core-spring/src/main/java/com/magneton/service/core/spring/scan/MagnetonModule.java" />
+        <option value="$PROJECT_DIR$/service-support-druid-spring/src/main/java/com/magneton/service/support/druid/MybatisAutoConfiguration.java" />
+        <option value="$PROJECT_DIR$/service-starter-spring/src/main/java/com/magneton/service/spring/boot/MagnetonServiceAutoConfiguration.java" />
+        <option value="$PROJECT_DIR$/service-support-druid-spring/src/main/java/com/magneton/service/support/druid/DruidAutoConfiguration.java" />
+        <option value="$PROJECT_DIR$/service-core-spring/src/main/java/com/magneton/service/core/spring/converter/FastjsonHttpMessageConvertersConfig.java" />
+        <option value="$PROJECT_DIR$/service-core-spring/src/main/java/com/magneton/service/core/spring/converter/FastjsonHttpMessageConverters.java" />
+        <option value="$PROJECT_DIR$/service-core-spring/src/main/java/com/magneton/service/core/spring/automation/AutomationInitializeImpl.java" />
+        <option value="$PROJECT_DIR$/service-core-spring/src/main/java/com/magneton/service/core/spring/automation/AutomationHandlerInterceptor.java" />
+        <option value="$PROJECT_DIR$/service-core/src/main/java/com/magneton/service/core/MagnetonConstants.java" />
+        <option value="$PROJECT_DIR$/service-core-spring/src/main/java/com/magneton/service/core/spring/automation/AutomationWebMvcConfigurer.java" />
+        <option value="$PROJECT_DIR$/service-core/src/main/java/com/magneton/service/core/Result.java" />
       </list>
     </option>
   </component>
@@ -289,6 +328,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="PackagesPane">
         <subPane>
           <expand>
@@ -361,7 +401,7 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="spring" type="462c0819:PsiDirectoryNode" />
-              <item name="defence" type="462c0819:PsiDirectoryNode" />
+              <item name="automation" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="magneton-service" type="b2602c69:ProjectViewProjectNode" />
@@ -371,17 +411,7 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="spring" type="462c0819:PsiDirectoryNode" />
-              <item name="limiter" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="magneton-service" type="b2602c69:ProjectViewProjectNode" />
-              <item name="magneton-service" type="462c0819:PsiDirectoryNode" />
-              <item name="service-core-spring" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="spring" type="462c0819:PsiDirectoryNode" />
-              <item name="redis" type="462c0819:PsiDirectoryNode" />
+              <item name="converter" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="magneton-service" type="b2602c69:ProjectViewProjectNode" />
@@ -425,6 +455,15 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="magneton-service" type="b2602c69:ProjectViewProjectNode" />
+              <item name="magneton-service" type="462c0819:PsiDirectoryNode" />
+              <item name="service-starter-spring" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="META-INF" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="magneton-service" type="b2602c69:ProjectViewProjectNode" />
@@ -478,11 +517,17 @@
               <item name="resources" type="462c0819:PsiDirectoryNode" />
               <item name="META-INF" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="magneton-service" type="b2602c69:ProjectViewProjectNode" />
+              <item name="magneton-service" type="462c0819:PsiDirectoryNode" />
+              <item name="service-support-druid-spring" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -503,18 +548,18 @@
       <recent name="com.magneton.service.core.spring" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.magneton.service.support.druid" />
       <recent name="org.apache.dubbo.common.util" />
       <recent name="com.magneton.service.core.util" />
       <recent name="com.magneton.service.core.spring.limiter" />
       <recent name="com.magneton.service.core.signature" />
-      <recent name="com.magneton.service.core.spring" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="H:\javaprojects\magneton-service\service-core-spring\src\main\java\com\magneton\service\core\spring" />
+      <recent name="H:\javaprojects\magneton-service\service-support-druid-spring\src\main\resources\META-INF" />
+      <recent name="H:\javaprojects\magneton-service\service-support-druid-spring\src\main\resources\META-INF\services" />
       <recent name="H:\javaprojects\magneton-service\service-support-druid-spring\src\main\resources" />
       <recent name="H:\javaprojects\magneton-service\service-core\src\main\java\com\alibaba\dubbo" />
-      <recent name="H:\javaprojects\magneton-service\service-core\src\main\java\com\magneton\service\core\signature" />
-      <recent name="H:\javaprojects\magneton-service\service-core\src\main\java\com\magneton\service\core" />
-      <recent name="H:\javaprojects\magneton-service\service-core-spring\src\test\resource" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -694,7 +739,9 @@
       <workItem from="1564113074030" duration="1221000" />
       <workItem from="1564125539729" duration="622000" />
       <workItem from="1564379495997" duration="9162000" />
-      <workItem from="1564466192818" duration="2661000" />
+      <workItem from="1564466192818" duration="4483000" />
+      <workItem from="1564473033264" duration="3936000" />
+      <workItem from="1564479257358" duration="13614000" />
     </task>
     <servers />
   </component>
@@ -731,14 +778,14 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="130810000" />
+    <option name="totallyTimeSpent" value="150182000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-1928" y="-82" width="1936" height="1096" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Web" order="0" side_tool="true" />
-      <window_info active="true" content_ui="combo" id="Project" order="1" sideWeight="0.6703755" visible="true" weight="0.2874122" />
+      <window_info content_ui="combo" id="Project" order="1" sideWeight="0.6703755" visible="true" weight="0.29821718" />
       <window_info id="Structure" order="2" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="3" side_tool="true" />
       <window_info id="JRebel" order="4" side_tool="true" />
@@ -758,7 +805,7 @@
       <window_info anchor="bottom" id="SonarLint" order="11" />
       <window_info anchor="bottom" id="Tail" order="12" />
       <window_info anchor="bottom" id="Database Changes" order="13" />
-      <window_info anchor="bottom" id="Terminal" order="14" sideWeight="0.49970222" visible="true" weight="0.25313568" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="14" sideWeight="0.49970222" visible="true" weight="0.30672747" />
       <window_info anchor="bottom" id="JRebel Console" order="15" side_tool="true" />
       <window_info anchor="bottom" id="JRebel Executor" order="16" />
       <window_info anchor="bottom" id="Debug with VisualVM" order="17" />
@@ -771,7 +818,7 @@
       <window_info anchor="bottom" id="Changes" order="24" />
       <window_info anchor="bottom" id="Profiler" order="25" />
       <window_info anchor="bottom" id="Event Log" order="26" sideWeight="0.5002978" side_tool="true" weight="0.32402912" />
-      <window_info anchor="bottom" id="Messages" order="27" weight="0.2986858" />
+      <window_info anchor="bottom" id="Messages" order="27" weight="0.29749104" />
       <window_info anchor="bottom" id="Ant Build" order="28" weight="0.1825" />
       <window_info anchor="right" id="Bean Validation" order="0" weight="0.3295516" />
       <window_info anchor="right" id="Mybatis datasource" order="1" side_tool="true" />
@@ -823,238 +870,10 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/service-core/src/test/java/com/magneton/service/core/limiter/DefaultTimesLimiterTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1421">
-          <caret line="49" column="26" selection-start-line="49" selection-start-column="26" selection-end-line="49" selection-end-column="26" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/service-core/src/test/java/com/magneton/service/core/limiter/BasicTimesLimiterTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1914">
-          <caret line="71" column="42" selection-start-line="71" selection-start-column="42" selection-end-line="71" selection-end-column="42" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/junit/junit/4.12/junit-4.12-sources.jar!/org/junit/Assert.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1334">
-          <caret line="50" column="23" selection-start-line="50" selection-start-column="23" selection-end-line="50" selection-end-column="23" />
-          <folding>
-            <element signature="e#1439#1440#0" expanded="true" />
-            <element signature="e#1482#1483#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/service-core/src/main/java/com/magneton/service/core/limiter/TimesLimiter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="754">
-          <caret line="26" column="17" selection-start-line="26" selection-start-column="17" selection-end-line="26" selection-end-column="17" />
-          <folding>
-            <element signature="e#704#705#0" expanded="true" />
-            <element signature="e#754#755#0" expanded="true" />
-            <element signature="e#1151#1152#0" expanded="true" />
-            <element signature="e#1203#1204#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/service-core/src/main/java/com/magneton/service/core/limiter/LimiterRule.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="696">
-          <caret line="25" column="39" selection-start-line="25" selection-start-column="39" selection-end-line="25" selection-end-column="39" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/service-core/src/main/java/com/magneton/service/core/limiter/TimesLimiterConfig.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1044">
-          <caret line="36" column="7" selection-start-line="36" selection-start-column="7" selection-end-line="36" selection-end-column="7" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#879#880#0" expanded="true" />
-            <element signature="e#928#929#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/.m2/settings.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="29">
-          <caret line="1" selection-start-line="1" selection-end-line="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/checkerframework/checker-qual/2.5.2/checker-qual-2.5.2.jar!/org/checkerframework/common/reflection/qual/UnknownMethod.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="319">
-          <caret line="20" column="18" selection-start-line="20" selection-start-column="18" selection-end-line="20" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/service-core-spring/src/main/java/com/magneton/service/core/spring/limiter/RedisTimesLimiter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1566">
-          <caret line="58" column="40" selection-start-line="58" selection-start-column="40" selection-end-line="58" selection-end-column="40" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/data/spring-data-redis/2.1.6.RELEASE/spring-data-redis-2.1.6.RELEASE-sources.jar!/org/springframework/data/redis/connection/RedisConnection.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3857">
-          <caret line="169" column="12" selection-start-line="169" selection-start-column="12" selection-end-line="169" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/service-core/src/main/java/com/magneton/service/core/limiter/DefaultTimesLimiter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="4437">
-          <caret line="158" selection-start-line="158" selection-end-line="158" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/service-core/src/main/java/com/magneton/service/core/util/SegmentLocks.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-206">
-          <caret line="25" column="5" lean-forward="true" selection-start-line="25" selection-start-column="5" selection-end-line="25" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/service-core/src/main/java/org/apache/dubbo/common/extension/factory/SpiExtensionFactory.java" />
-    <entry file="file://$PROJECT_DIR$/service-core/src/main/java/org/apache/dubbo/common/extension/Adaptive.java" />
-    <entry file="file://$PROJECT_DIR$/service-core/src/main/java/org/apache/dubbo/common/extension/Activate.java" />
-    <entry file="file://$PROJECT_DIR$/service-core/src/main/java/org/apache/dubbo/common/extension/support/ActivateComparator.java" />
-    <entry file="file://$PROJECT_DIR$/service-core/src/main/java/org/apache/dubbo/common/extension/AdaptiveClassCodeGenerator.java" />
-    <entry file="file://$PROJECT_DIR$/service-core/src/main/java/org/apache/dubbo/common/extension/factory/AdaptiveExtensionFactory.java" />
-    <entry file="file://$PROJECT_DIR$/service-core/src/main/java/org/apache/dubbo/common/extension/SPI.java" />
-    <entry file="file://$PROJECT_DIR$/service-core/src/main/java/com/magneton/service/core/util/LRUCache.java">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/service-core/src/main/java/org/apache/dubbo/common/extension/ExtensionLoader.java" />
-    <entry file="file://$PROJECT_DIR$/service-core/src/main/java/org/apache/dubbo/common/util/Holder.java" />
-    <entry file="file://$PROJECT_DIR$/service-core/src/main/java/org/apache/dubbo/common/extension/DisableInject.java" />
-    <entry file="file://$PROJECT_DIR$/service-core/src/main/java/org/apache/dubbo/common/extension/ExtensionFactory.java" />
-    <entry file="file://$PROJECT_DIR$/service-core/src/main/java/com/magneton/service/core/util/NamedThreadFactory.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="232">
-          <caret line="24" column="13" selection-start-line="24" selection-start-column="13" selection-end-line="24" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/service-support-druid-spring/src/main/java/com/magneton/service/support/druid/util/DataUtils.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/service-support-druid-spring/src/main/java/com/magneton/service/support/druid/MybatisPropertiesSupport.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="232">
-          <caret line="8" column="17" selection-start-line="8" selection-start-column="17" selection-end-line="8" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk8/src.zip!/java/lang/RuntimeException.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="29">
-          <caret line="42" column="13" selection-start-line="42" selection-start-column="13" selection-end-line="42" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/service-core/src/main/java/com/magneton/service/core/exception/UnsupportedMethodException.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="493">
-          <caret line="17" column="24" selection-start-line="17" selection-start-column="24" selection-end-line="17" selection-end-column="24" />
-          <folding>
-            <element signature="e#253#254#0" expanded="true" />
-            <element signature="e#331#332#0" expanded="true" />
-            <element signature="e#434#435#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/service-core/pom.xml">
-      <provider editor-type-id="MavenHelperPluginDependencyAnalyzer" />
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-874">
-          <caret line="13" column="18" selection-start-line="13" selection-start-column="18" selection-end-line="13" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/service-core/src/main/java/com/magneton/service/core/Default.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="261">
-          <caret line="10" column="59" lean-forward="true" selection-start-line="10" selection-start-column="59" selection-end-line="10" selection-end-column="59" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/service-core/src/main/java/com/magneton/service/core/Configurable.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="232">
-          <caret line="8" column="14" lean-forward="true" selection-start-line="8" selection-start-column="14" selection-end-line="8" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/service-core/src/main/java/com/magneton/service/core/MagnetonConstants.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="203">
-          <caret line="7" column="42" selection-start-line="7" selection-start-column="42" selection-end-line="7" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/service-core-spring/src/main/java/com/magneton/service/core/spring/defence/RequestDefenceProperties.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="377">
-          <caret line="15" column="77" selection-start-line="15" selection-start-column="40" selection-end-line="15" selection-end-column="77" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/service-core-spring/src/main/java/com/magneton/service/core/spring/limiter/TimesLimiterProperties.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="435">
-          <caret line="15" column="77" selection-start-line="15" selection-start-column="77" selection-end-line="15" selection-end-column="77" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/service-core-spring/src/main/java/com/magneton/service/core/spring/redis/LettuceRedisProperties.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="551">
           <caret line="34" column="13" selection-start-line="34" selection-start-column="13" selection-end-line="34" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/service-core-spring/src/main/java/com/magneton/service/core/spring/YamlPropertySourceFactory.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="522">
-          <caret line="24" column="13" selection-start-line="24" selection-start-column="13" selection-end-line="24" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/service-support-druid-spring/src/main/java/com/magneton/service/support/druid/DruidProperties.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="192">
-          <caret line="13" column="18" selection-start-line="13" selection-start-column="18" selection-end-line="13" selection-end-column="18" />
         </state>
       </provider>
     </entry>
@@ -1063,29 +882,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="236">
           <caret line="10" selection-start-line="10" selection-end-line="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/service-starter-spring/src/main/java/com/magneton/service/spring/boot/MagnetonServiceAutoConfiguration.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="261">
-          <caret line="10" column="18" lean-forward="true" selection-start-line="10" selection-start-column="18" selection-end-line="10" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/service-support-druid-spring/pom.xml">
-      <provider editor-type-id="MavenHelperPluginDependencyAnalyzer" />
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-627">
-          <caret line="24" column="27" lean-forward="true" selection-start-line="24" selection-start-column="27" selection-end-line="24" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/service-starter-spring/pom.xml">
-      <provider editor-type-id="MavenHelperPluginDependencyAnalyzer" />
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="214">
-          <caret line="16" column="38" selection-start-line="16" selection-start-column="38" selection-end-line="16" selection-end-column="38" />
         </state>
       </provider>
     </entry>
@@ -1115,11 +911,12 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/service-core-spring/src/main/java/com/magneton/service/core/spring/redis/MultiRedisTemplateFactory.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="145">
+        <state relative-caret-position="232">
           <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/service-core/src/main/java/com/magneton/service/core/ResultCodeFactory.java" />
     <entry file="file://$PROJECT_DIR$/service-core-spring/src/main/java/com/magneton/service/core/spring/redis/MultiRedisProperties.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="290">
@@ -1127,32 +924,354 @@
         </state>
       </provider>
     </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/boot/spring-boot-autoconfigure/2.1.4.RELEASE/spring-boot-autoconfigure-2.1.4.RELEASE-sources.jar!/org/springframework/boot/autoconfigure/EnableAutoConfiguration.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1479">
+          <caret line="80" column="18" selection-start-line="80" selection-start-column="18" selection-end-line="80" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/service-core-spring/pom.xml">
       <provider editor-type-id="MavenHelperPluginDependencyAnalyzer" />
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="674">
-          <caret line="61" column="21" lean-forward="true" selection-start-line="61" selection-start-column="21" selection-end-line="61" selection-end-column="21" />
+        <state relative-caret-position="1769">
+          <caret line="61" column="21" selection-start-line="61" selection-start-column="21" selection-end-line="61" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-core/5.1.6.RELEASE/spring-core-5.1.6.RELEASE-sources.jar!/org/springframework/core/Ordered.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="58">
+          <caret line="43" lean-forward="true" selection-start-line="43" selection-end-line="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-core/5.1.6.RELEASE/spring-core-5.1.6.RELEASE-sources.jar!/org/springframework/core/PriorityOrdered.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="331">
+          <caret line="42" column="1" lean-forward="true" selection-start-line="42" selection-start-column="1" selection-end-line="42" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/service-support-druid-spring/src/main/java/com/magneton/service/support/druid/DruidProperties.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="232">
+          <caret line="19" selection-start-line="19" selection-end-line="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-context/5.1.6.RELEASE/spring-context-5.1.6.RELEASE.jar!/org/springframework/context/annotation/ComponentScans.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="261">
+          <caret line="16" column="18" selection-start-line="16" selection-start-column="18" selection-end-line="16" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-context/5.1.6.RELEASE/spring-context-5.1.6.RELEASE.jar!/org/springframework/context/annotation/ComponentScan.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="348">
+          <caret line="22" column="31" selection-start-line="22" selection-start-column="31" selection-end-line="22" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-context/5.1.6.RELEASE/spring-context-5.1.6.RELEASE-sources.jar!/org/springframework/context/annotation/ComponentScans.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="406">
+          <caret line="41" column="9" lean-forward="true" selection-start-line="41" selection-start-column="9" selection-end-line="41" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-context/5.1.6.RELEASE/spring-context-5.1.6.RELEASE-sources.jar!/org/springframework/context/annotation/ComponentScan.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="29">
+          <caret line="58" column="18" selection-start-line="58" selection-start-column="18" selection-end-line="58" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/boot/spring-boot-autoconfigure/2.1.4.RELEASE/spring-boot-autoconfigure-2.1.4.RELEASE-sources.jar!/org/springframework/boot/autoconfigure/data/AbstractRepositoryConfigurationSourceSupport.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="262">
+          <caret line="46" column="22" selection-start-line="46" selection-start-column="22" selection-end-line="46" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-context/5.1.6.RELEASE/spring-context-5.1.6.RELEASE-sources.jar!/org/springframework/context/annotation/ImportBeanDefinitionRegistrar.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="175">
+          <caret line="49" column="31" selection-start-line="49" selection-start-column="31" selection-end-line="49" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/service-starter-spring/src/main/java/com/magneton/service/spring/boot/MagnetonModuleLoader.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="145">
+          <caret line="5" column="3" lean-forward="true" selection-start-line="5" selection-start-column="3" selection-end-line="5" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/service-core-spring/src/main/java/com/magneton/service/core/spring/scan/ModuleReverser.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="174">
+          <caret line="6" column="17" selection-start-line="6" selection-start-column="17" selection-end-line="6" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk8/src.zip!/java/util/List.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="233">
+          <caret line="169" column="13" selection-start-line="169" selection-start-column="13" selection-end-line="169" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/service-core-spring/src/main/java/com/magneton/service/core/spring/YamlPropertySourceFactory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-142">
+          <caret line="20" column="2" lean-forward="true" selection-start-line="20" selection-start-column="2" selection-end-line="20" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/service-support-druid-spring/src/main/java/com/magneton/service/support/druid/MybatisPropertiesSupport.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="284">
+          <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/service-support-druid-spring/src/main/resources/META-INF/services/com.magneton.service.core.spring.scan.MagnetonModule">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="47" selection-start-column="47" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/service-starter-spring/pom.xml">
+      <provider editor-type-id="MavenHelperPluginDependencyAnalyzer" />
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="377">
+          <caret line="16" column="38" selection-start-line="16" selection-start-column="38" selection-end-line="16" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/service-core-spring/src/main/java/com/magneton/service/core/spring/scan/ReverseComponentScan.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="499">
+          <caret line="49" column="25" selection-start-line="49" selection-start-column="13" selection-end-line="49" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/service-starter-spring/src/main/resources/META-INF/spring.factories">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="29">
+          <caret line="1" column="48" lean-forward="true" selection-start-line="1" selection-start-column="48" selection-end-line="1" selection-end-column="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/service-support-druid-spring/src/main/java/com/magneton/service/support/druid/ModuleAutoConfiguration.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="177">
+          <caret line="7" column="3" lean-forward="true" selection-start-line="7" selection-start-column="3" selection-end-line="7" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/service-support-druid-spring/pom.xml">
+      <provider editor-type-id="MavenHelperPluginDependencyAnalyzer" />
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="406">
+          <caret line="17" column="53" selection-start-line="17" selection-start-column="53" selection-end-line="17" selection-end-column="53" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-context/5.1.6.RELEASE/spring-context-5.1.6.RELEASE-sources.jar!/org/springframework/context/annotation/Configuration.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="283">
+          <caret line="420" column="18" selection-start-line="420" selection-start-column="18" selection-end-line="420" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/service-core/src/main/java/com/magneton/service/core/MagnetonLogger.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="9" column="15" selection-end-line="173" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/service-core-spring/src/main/java/com/magneton/service/core/spring/scan/ReverseComponentScanner.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="203">
+          <caret line="28" column="48" selection-start-line="28" selection-start-column="34" selection-end-line="28" selection-end-column="48" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/service-core-spring/src/main/java/com/magneton/service/core/spring/scan/ModuleReverserComponentScan.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="24" column="59" selection-end-line="52" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/service-core-spring/src/main/java/com/magneton/service/core/spring/scan/MagnetonModule.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="232">
+          <caret line="8" column="3" selection-start-line="8" selection-start-column="3" selection-end-line="8" selection-end-column="3" />
+          <folding>
+            <element signature="e#0#186#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/service-support-druid-spring/src/main/java/com/magneton/service/support/druid/MybatisAutoConfiguration.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="87">
+          <caret line="21" selection-start-line="21" selection-end-line="21" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/service-support-druid-spring/src/main/java/com/magneton/service/support/druid/MybatisConfiguration.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="464">
+          <caret line="16" selection-end-line="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/service-starter-spring/src/main/java/com/magneton/service/spring/boot/MagnetonServiceAutoConfiguration.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="209">
+          <caret line="29" column="5" lean-forward="true" selection-start-line="29" selection-start-column="5" selection-end-line="29" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1055#1056#0" expanded="true" />
+            <element signature="e#1103#1104#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/service-support-druid-spring/src/main/java/com/magneton/service/support/druid/DruidAutoConfiguration.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="358">
+          <caret line="35" column="5" selection-start-line="35" selection-start-column="5" selection-end-line="35" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1322#1323#0" expanded="true" />
+            <element signature="e#1375#1376#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/service-support-druid-spring/src/main/resources/META-INF/spring.factories">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="29">
-          <caret line="1" column="50" lean-forward="true" selection-start-line="1" selection-start-column="50" selection-end-line="1" selection-end-column="50" />
+          <caret line="1" column="60" selection-start-line="1" selection-start-column="60" selection-end-line="1" selection-end-column="60" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/service-support-druid-spring/src/main/java/com/magneton/service/support/druid/DruidAutoConfiguration.java">
+    <entry file="file://$PROJECT_DIR$/service-core-spring/src/main/java/com/magneton/service/core/spring/automation/ResourceHandlerMapping.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/service-core-spring/src/main/java/com/magneton/service/core/spring/automation/AutomationInitialize.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/service-core-spring/src/main/java/com/magneton/service/core/spring/automation/AutomationResourceHandler.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/service-core-spring/src/main/java/com/magneton/service/core/spring/converter/FastjsonHttpMessageConvertersConfig.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/service-core-spring/src/main/java/com/magneton/service/core/spring/converter/FastjsonHttpMessageConverters.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="137">
-          <caret line="21" column="21" selection-start-line="21" selection-start-column="21" selection-end-line="21" selection-end-column="21" />
+        <state relative-caret-position="1363">
+          <caret line="53" column="38" lean-forward="true" selection-start-line="53" selection-start-column="38" selection-end-line="53" selection-end-column="38" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1608#1609#0" expanded="true" />
+            <element signature="e#1695#1696#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/service-support-druid-spring/src/main/java/com/magneton/service/support/druid/MybatisConfiguration.java">
+    <entry file="file://$PROJECT_DIR$/service-core-spring/src/main/java/com/magneton/service/core/spring/automation/AutomationInitializeImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="266">
-          <caret line="29" column="44" selection-start-line="29" selection-start-column="44" selection-end-line="29" selection-end-column="44" />
+        <state relative-caret-position="276">
+          <caret line="46" column="67" selection-start-line="46" selection-start-column="67" selection-end-line="46" selection-end-column="67" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/service-core-spring/src/main/java/com/magneton/service/core/spring/automation/AutomationHandlerInterceptor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="288">
+          <caret line="78" column="20" lean-forward="true" selection-start-line="78" selection-start-column="20" selection-end-line="78" selection-end-column="20" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/service-core/src/main/java/com/magneton/service/core/MagnetonConstants.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="232">
+          <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/service-core-spring/src/main/java/com/magneton/service/core/spring/automation/AutomationWebMvcConfigurer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="404">
+          <caret line="44" column="24" selection-start-line="44" selection-start-column="24" selection-end-line="44" selection-end-column="24" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk8/src.zip!/java/util/Collections.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="205">
+          <caret line="4519" column="31" lean-forward="true" selection-start-line="4519" selection-start-column="31" selection-end-line="4519" selection-end-column="31" />
+          <folding>
+            <element signature="e#178258#178259#0" expanded="true" />
+            <element signature="e#178301#178302#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/service-core/src/main/java/com/magneton/service/core/Result.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="73">
+          <caret line="148" column="5" lean-forward="true" selection-start-line="148" selection-start-column="5" selection-end-line="148" selection-end-column="5" />
+          <folding>
+            <element signature="e#2899#2900#0" expanded="true" />
+            <element signature="e#2926#2927#0" expanded="true" />
+            <element signature="e#2957#2958#0" expanded="true" />
+            <element signature="e#2984#2985#0" expanded="true" />
+            <element signature="e#3010#3011#0" expanded="true" />
+            <element signature="e#3037#3038#0" expanded="true" />
+            <element signature="e#3071#3072#0" expanded="true" />
+            <element signature="e#3103#3104#0" expanded="true" />
+            <element signature="e#3137#3138#0" expanded="true" />
+            <element signature="e#3167#3168#0" expanded="true" />
+            <element signature="e#3217#3218#0" expanded="true" />
+            <element signature="e#3250#3251#0" expanded="true" />
+            <element signature="e#3363#3364#0" expanded="true" />
+            <element signature="e#3395#3396#0" expanded="true" />
+            <element signature="e#3435#3436#0" expanded="true" />
+            <element signature="e#3467#3468#0" expanded="true" />
+            <element signature="e#3502#3503#0" expanded="true" />
+            <element signature="e#3534#3535#0" expanded="true" />
+            <element signature="e#3582#3583#0" expanded="true" />
+            <element signature="e#3624#3625#0" expanded="true" />
+            <element signature="e#3671#3672#0" expanded="true" />
+            <element signature="e#3709#3710#0" expanded="true" />
+            <element signature="e#3774#3775#0" expanded="true" />
+            <element signature="e#3818#3819#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
