@@ -69,6 +69,13 @@ public class Result<T> {
 
     }
 
+    public final static Result fail(Result res) {
+        Result result = new Result();
+        result.code = res.code;
+        result.info = res.info;
+        return result;
+    }
+
     public final static Result fail() {
         Result result = new Result();
         result.code = ERROR_CODE;
@@ -145,7 +152,7 @@ public class Result<T> {
     }
 
     public boolean isSuccess() {
-        return success;
+        return code == SUCCESS_CODE;
     }
 
     public Map<String, Object> getAdditional() {
@@ -166,10 +173,6 @@ public class Result<T> {
 
     public void setTimestamp(long timestamp) {
         this.timestamp = timestamp;
-    }
-
-    public void setSuccess(boolean success) {
-        this.success = success;
     }
 
     public void setAdditional(Map<String, Object> additional) {

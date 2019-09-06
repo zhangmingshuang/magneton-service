@@ -29,7 +29,7 @@ public class MultiRedisDatasourceTest {
 
     @Value("${test.a:empty}")
     private String a;
-    @Value("${spring.redis.host:emptyb}")
+    @Value("${spring.redis.host:empty}")
     private String b;
     @Autowired
     private MultiRedisTemplateFactory multiRedisTemplateFactory;

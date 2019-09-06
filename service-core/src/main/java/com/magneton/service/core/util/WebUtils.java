@@ -203,6 +203,28 @@ public abstract class WebUtils {
         return doGet(url, params, DEFAULT_CHARSET);
     }
 
+    public static String doGet(String url, Map<String, String> params,
+                               String charset,
+                               int connectTimeout,
+                               int readTimeout) throws IOException {
+
+        HttpURLConnection conn = null;
+        String rsp = null;
+        try {
+            String ctype = "application/x-www-form-urlencoded;charset=" + charset;
+            String query = buildQuery(params, charset);
+            conn = getConnection(buildGetUrl(url, query), METHOD_GET, ctype, null);
+            conn.setConnectTimeout(connectTimeout);
+            conn.setReadTimeout(readTimeout);
+            rsp = getResponseAsString(conn);
+        } finally {
+            if (conn != null) {
+                conn.disconnect();
+            }
+        }
+        return rsp;
+    }
+
     /**
      * 执行HTTP GET请求。
      *
@@ -214,31 +236,7 @@ public abstract class WebUtils {
      */
     public static String doGet(String url, Map<String, String> params,
                                String charset) throws IOException {
-        HttpURLConnection conn = null;
-        String rsp = null;
-
-        try {
-            String ctype = "application/x-www-form-urlencoded;charset=" + charset;
-            String query = buildQuery(params, charset);
-            try {
-                conn = getConnection(buildGetUrl(url, query), METHOD_GET, ctype, null);
-            } catch (IOException e) {
-                throw e;
-            }
-
-            try {
-                rsp = getResponseAsString(conn);
-            } catch (IOException e) {
-                throw e;
-            }
-
-        } finally {
-            if (conn != null) {
-                conn.disconnect();
-            }
-        }
-
-        return rsp;
+        return doGet(url, params, charset, 2000, 2000);
     }
 
     private static HttpURLConnection getConnection(URL url, String method,

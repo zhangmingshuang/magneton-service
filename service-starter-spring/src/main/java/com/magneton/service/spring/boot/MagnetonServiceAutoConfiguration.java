@@ -1,5 +1,7 @@
 package com.magneton.service.spring.boot;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.boot.autoconfigure.AutoConfigureBefore;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
@@ -21,12 +23,15 @@ import org.springframework.core.annotation.Order;
 @ComponentScan(basePackages = "com.magneton.service.core.spring")
 public class MagnetonServiceAutoConfiguration implements PriorityOrdered {
 
+    private static final Logger LOGGER = LoggerFactory.getLogger("magneton-boot");
+
     @Override
     public int getOrder() {
         return Ordered.HIGHEST_PRECEDENCE;
     }
 
     public MagnetonServiceAutoConfiguration() {
+        LOGGER.info("magneton frame with spring boot. pkg : [com.magneton.service.core.spring]");
     }
 
 }

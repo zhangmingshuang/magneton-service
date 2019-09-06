@@ -22,7 +22,7 @@ import org.springframework.data.redis.core.RedisTemplate;
 public class TimesLimiterConfiguration {
 
     @Bean
-    @ConditionalOnMissingBean(TimesLimiter.class)
+    @ConditionalOnMissingBean
     public TimesLimiter timesLimiter(TimesLimiterProperties properties) {
         TimesLimiter timesLimiter = new DefaultTimesLimiter();
         timesLimiter.afterConfigSet(properties);
@@ -31,8 +31,8 @@ public class TimesLimiterConfiguration {
 
     @Bean
     @ConditionalOnBean(RedisTemplate.class)
-    public TimesLimiter timesLimiter(RedisTemplate redisTemplate,
-                                     TimesLimiterProperties properties) {
+    public TimesLimiter redisTemplateTimesLimiter(RedisTemplate redisTemplate,
+                                                  TimesLimiterProperties properties) {
         TimesLimiter timesLimiter;
         if (properties.isLocal()) {
             timesLimiter = new DefaultTimesLimiter();

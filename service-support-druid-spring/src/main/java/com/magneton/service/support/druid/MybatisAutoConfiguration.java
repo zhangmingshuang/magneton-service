@@ -23,11 +23,16 @@ public class MybatisAutoConfiguration {
     @Primary
     public MybatisProperties mybatisProperties(
             @Autowired MybatisPropertiesSupport[] mybatisPropertiesSupport,
-            @Autowired(required = false) org.apache.ibatis.session.Configuration configuration) {
+            @Autowired(required = false) org.apache.ibatis.session.Configuration configuration,
+            @Autowired(required = false) MybatisSessionConfiuration mybatisSessionConfiuration) {
 
         if (configuration == null) {
             configuration = new org.apache.ibatis.session.Configuration();
             configuration.setMapUnderscoreToCamelCase(true);
+        }
+
+        if (mybatisSessionConfiuration != null) {
+            mybatisSessionConfiuration.config(configuration);
         }
 
         final Logger LOGGER = LoggerFactory.getLogger(MybatisAutoConfiguration.class);

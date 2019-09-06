@@ -18,9 +18,12 @@ import org.springframework.data.redis.core.RedisTemplate;
 @EnableConfigurationProperties(RequestDefenceProperties.class)
 public class RequestDefenceConfiguration {
 
+    public RequestDefenceConfiguration(){
+    }
+
     @Bean
     @ConditionalOnBean(RedisTemplate.class)
-    public RequestDefence requestDefence(RedisTemplate redisTemplate,
+    public RequestDefence redisTemplateRequestDefence(RedisTemplate redisTemplate,
                                          RequestDefenceProperties properties) {
         RequestDefence defence;
         if (properties.isLocal()) {
@@ -33,10 +36,11 @@ public class RequestDefenceConfiguration {
     }
 
     @Bean
-    @ConditionalOnMissingBean(RequestDefence.class)
+    @ConditionalOnMissingBean
     public RequestDefence requestDefence(RequestDefenceProperties properties) {
         RequestDefence defence = new GuavaCacheRequestDefence();
         defence.afterConfigSet(properties);
         return defence;
     }
+
 }
