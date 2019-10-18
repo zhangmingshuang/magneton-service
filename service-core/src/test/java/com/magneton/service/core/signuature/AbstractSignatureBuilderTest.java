@@ -38,6 +38,11 @@ public class AbstractSignatureBuilderTest {
         public String signContent(Map<String, String[]> parameterMap) {
             return null;
         }
+
+        @Override
+        public String getSign() {
+            return null;
+        }
     }
 
     @Before

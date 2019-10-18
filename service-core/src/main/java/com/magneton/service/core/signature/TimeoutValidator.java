@@ -16,7 +16,6 @@ public class TimeoutValidator {
     }
 
     public boolean isTimeOut(long time) {
-        System.out.println(System.currentTimeMillis() - time);
         return System.currentTimeMillis() - time > timeOut;
     }
 

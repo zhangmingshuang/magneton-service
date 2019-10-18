@@ -31,4 +31,6 @@ public interface Signature {
      * @return String 签名内容
      */
     String signContent(Map<String, String[]> parameterMap);
+
+    String getSign();
 }

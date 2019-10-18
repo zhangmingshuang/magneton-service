@@ -1,6 +1,5 @@
 package com.magneton.service.core;
 
-import lombok.Getter;
 import lombok.ToString;
 
 import java.util.Collections;
@@ -15,11 +14,11 @@ import java.util.Map;
 public class Result<T> {
 
     public static final String ERROR = "操作失败";
-    public static final int ERROR_CODE = 1;
+    public static final String ERROR_CODE = "1";
     public static final String SUCCESS = "操作成功";
-    public static final int SUCCESS_CODE = 0;
+    public static final String SUCCESS_CODE = "0";
 
-    private int code;
+    private String code;
     private String info;
     private T data;
     private long timestamp;
@@ -30,11 +29,16 @@ public class Result<T> {
     private Map<String, Object> additional;
 
     private Result() {
-        this.timestamp = System.currentTimeMillis();
+
+    }
+
+    public Result code(String code) {
+        this.code = code;
+        return this;
     }
 
     public Result code(int code) {
-        this.code = code;
+        this.code = String.valueOf(code);
         return this;
     }
 
@@ -102,6 +106,11 @@ public class Result<T> {
         }
 
         public Builder code(int code) {
+            result.code = String.valueOf(code);
+            return this;
+        }
+
+        public Builder code(String code) {
             result.code = code;
             return this;
         }
@@ -135,7 +144,7 @@ public class Result<T> {
     }
 
 
-    public int getCode() {
+    public String getCode() {
         return code;
     }
 
@@ -148,7 +157,7 @@ public class Result<T> {
     }
 
     public long getTimestamp() {
-        return timestamp;
+        return System.currentTimeMillis();
     }
 
     public boolean isSuccess() {
@@ -159,7 +168,7 @@ public class Result<T> {
         return additional == null ? Collections.emptyMap() : additional;
     }
 
-    public void setCode(int code) {
+    public void setCode(String code) {
         this.code = code;
     }
 

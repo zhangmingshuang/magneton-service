@@ -7,6 +7,7 @@ import javax.crypto.KeyGenerator;
 import javax.crypto.SecretKey;
 import javax.crypto.spec.IvParameterSpec;
 import javax.crypto.spec.SecretKeySpec;
+import java.nio.charset.Charset;
 import java.security.SecureRandom;
 import java.util.Arrays;
 
@@ -18,35 +19,36 @@ import java.util.Arrays;
  */
 public class AESUtils {
 
+//    public static void main(String[] args) {
+//        try {
+//            String s = AESUtils.aesCBCNoPaddingEncrypt("test", "auxskajukwx9sjo4", "6xjoiu9skxn35tho");
+//            System.out.println(s);
+//            String d = AESUtils.aesCBCNoPaddingDecrypt(s, "auxskajukwx9sjo4", "6xjoiu9skxn35tho");
+//            System.out.println(d);
+//            System.out.println("test".equals(d));
+//        } catch (Throwable throwable) {
+//            throwable.printStackTrace();
+//        }
+//    }
+
     /**
      * AES的Key合法大小
      */
-    private static final int[] AES_KEYSIZES = new int[]{16};
+    private static final int AES_KEYSIZES = 16;
 
     /**
      * 算法/模式/填充
      */
     private static final String CIPHERMODE = "AES/CBC/PKCS5Padding";
+    private static final String CIPHERMODE_NOPADDING = "AES/CBC/NOPadding";
 
     public static byte[] convertToEnsureSize(String key) {
         int len = key.length();
-        int legal = 0;
-        int max = AES_KEYSIZES[AES_KEYSIZES.length - 1];
-        for (int size : AES_KEYSIZES) {
-            if (len <= size) {
-                legal = size;
-                break;
-            }
-            if (size >= max) {
-                legal = max;
-                break;
-            }
-        }
         byte[] bytes = key.getBytes();
-        if (len != legal) {
-            bytes = Arrays.copyOf(bytes, legal);
+        if (len != AES_KEYSIZES) {
+            bytes = Arrays.copyOf(bytes, AES_KEYSIZES);
             //数据填充
-            for (int i = len; i < legal; ++i) {
+            for (int i = len; i < AES_KEYSIZES; ++i) {
                 bytes[i] = 'x';
             }
         }
@@ -91,6 +93,20 @@ public class AESUtils {
         return Bytes.bytes2hex(result);
     }
 
+    public static String aesCBCNoPaddingEncrypt(String content, String password, String iv)
+            throws Throwable {
+        Cipher cipher = Cipher.getInstance(CIPHERMODE_NOPADDING);
+        cipher.init(Cipher.ENCRYPT_MODE, createSecretKeySpec(password), createIvParameterSpec(iv));
+        byte[] bytes = content.getBytes();
+        int plaintextLength = bytes.length;
+        plaintextLength = nextSize(plaintextLength < 16 ? 15 : plaintextLength - 1);
+        if (plaintextLength > bytes.length) {
+            bytes = Arrays.copyOf(bytes, plaintextLength);
+        }
+        byte[] result = cipher.doFinal(bytes);
+        return Bytes.bytes2hex(result);
+    }
+
     /**
      * AES-128/CBC算法解密字节数组
      *
@@ -106,42 +122,27 @@ public class AESUtils {
         cipher.init(Cipher.DECRYPT_MODE, createSecretKeySpec(password), createIvParameterSpec(iv));
         byte[] bytes = Bytes.hex2bytes(content);
         byte[] result = cipher.doFinal(bytes);
-        return new String(result);
+        return new String(result, Charset.defaultCharset());
     }
 
-
-    /**
-     * AES-128 CBC加密方式， 加密后使用Base64转码
-     *
-     * @param content 待加密内容
-     * @param key     密钥
-     * @param iv      初始化向量
-     * @return String
-     * @throws Throwable
-     */
-    public static String aesCBCEncrypt(String content, String key, String iv)
+    public static String aesCBCNoPaddingDecrypt(String content, String password, String iv)
             throws Throwable {
-        Cipher cipher = Cipher.getInstance("AES/CBC/PKCS5Padding");
-        cipher.init(Cipher.ENCRYPT_MODE, createSecretKeySpec(key), createIvParameterSpec(iv));
-        byte[] encrypted = cipher.doFinal(content.getBytes());
-        return Bytes.bytes2hex(encrypted);
-    }
-
-    /**
-     * AES-128 CBC解密方式
-     *
-     * @param content 待解密的Base64字符串
-     * @param key     密钥
-     * @param iv      初始化向量
-     * @return String
-     */
-    public static String aesCBCDecrypt(String content, String key, String iv)
-            throws Throwable {
-        Cipher cipher = Cipher.getInstance("AES/CBC/PKCS5Padding");
-        cipher.init(Cipher.DECRYPT_MODE, createSecretKeySpec(key), createIvParameterSpec(iv));
+        Cipher cipher = Cipher.getInstance(CIPHERMODE_NOPADDING);
+        cipher.init(Cipher.DECRYPT_MODE, createSecretKeySpec(password), createIvParameterSpec(iv));
         byte[] bytes = Bytes.hex2bytes(content);
-        byte[] original = cipher.doFinal(bytes);
-        return new String(original);
+        byte[] result = cipher.doFinal(bytes);
+        int binary = result.length >> 2;
+        byte bb = result[binary];
+        if (bb == 0) {
+            while (bb == 0) {
+                bb = result[--binary];
+            }
+        } else {
+            while (bb != 0) {
+                bb = result[++binary];
+            }
+        }
+        return new String(result, 0, binary + 1, Charset.defaultCharset());
     }
 
     /**
@@ -181,7 +182,17 @@ public class AESUtils {
         Cipher cipher = Cipher.getInstance("AES");
         cipher.init(Cipher.DECRYPT_MODE, secretKeySpec);
         byte[] result = cipher.doFinal(bytes);
-        return new String(result);
+        return new String(result, Charset.defaultCharset());
     }
 
+    private static int nextSize(int i) {
+        int newCapacity = i;
+        newCapacity |= newCapacity >>> 1;
+        newCapacity |= newCapacity >>> 2;
+        newCapacity |= newCapacity >>> 4;
+        newCapacity |= newCapacity >>> 8;
+        newCapacity |= newCapacity >>> 16;
+        newCapacity++;
+        return newCapacity;
+    }
 }

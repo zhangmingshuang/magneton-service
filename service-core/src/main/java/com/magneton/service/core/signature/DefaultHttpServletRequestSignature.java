@@ -251,4 +251,8 @@ public class DefaultHttpServletRequestSignature implements Signature {
         }
     }
 
+    @Override
+    public String getSign() {
+        return sign;
+    }
 }
