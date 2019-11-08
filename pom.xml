@@ -15,6 +15,7 @@
         <module>service-starter-spring</module>
         <module>service-support-druid-spring</module>
         <module>service-support-mybatis-spring</module>
+        <module>service-support-pubsub-spring</module>
     </modules>
 
     <dependencyManagement>

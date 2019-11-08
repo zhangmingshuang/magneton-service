@@ -1,2 +1,2 @@
 org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
-  com.magneton.service.support.mybatis.MybatisAutoConfiguration
+  com.magneton.service.support.pubsub.SubscribeAutoConfigrution

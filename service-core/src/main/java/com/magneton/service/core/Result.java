@@ -74,10 +74,7 @@ public class Result<T> {
     }
 
     public final static Result fail(Result res) {
-        Result result = new Result();
-        result.code = res.code;
-        result.info = res.info;
-        return result;
+        return res;
     }
 
     public final static Result fail() {
@@ -99,6 +96,7 @@ public class Result<T> {
     }
 
     public static class Builder<T> {
+
         private Result<T> result;
 
         public Builder() {
@@ -143,6 +141,27 @@ public class Result<T> {
         }
     }
 
+    public boolean isSuccessData(String str) {
+        if (!isSuccess()) {
+            return false;
+        }
+        return isData(str);
+    }
+
+    public boolean isSuccessData(Boolean bool) {
+        if (!isSuccess()) {
+            return false;
+        }
+        return isData(bool);
+    }
+
+    public boolean isData(String str) {
+        return str.equals(data);
+    }
+
+    public boolean isData(Boolean bool) {
+        return bool.equals(data);
+    }
 
     public String getCode() {
         return code;

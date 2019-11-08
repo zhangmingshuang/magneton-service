@@ -1,4 +1,4 @@
-package com.magneton.service.suuport.mybatis;
+package com.magneton.service.support.mybatis;
 
 /**
  * 用来支持自动化的Mybatis印射文件配置

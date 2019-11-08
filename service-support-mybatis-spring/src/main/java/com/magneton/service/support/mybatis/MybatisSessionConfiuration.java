@@ -1,4 +1,4 @@
-package com.magneton.service.suuport.mybatis;
+package com.magneton.service.support.mybatis;
 
 import org.apache.ibatis.session.Configuration;
 

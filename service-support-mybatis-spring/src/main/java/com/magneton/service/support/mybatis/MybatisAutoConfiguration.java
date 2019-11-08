@@ -1,4 +1,4 @@
-package com.magneton.service.suuport.mybatis;
+package com.magneton.service.support.mybatis;
 
 import org.mybatis.spring.boot.autoconfigure.MybatisProperties;
 import org.slf4j.Logger;
