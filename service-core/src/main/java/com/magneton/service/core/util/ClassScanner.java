@@ -16,7 +16,7 @@ import java.util.jar.JarEntry;
  */
 public class ClassScanner {
 
-    public static List<Class> findWithAnnotation(Class<? extends Annotation> annotationClass, String... pkgs) {
+    public static List<Class> findWithAnnotation(Class<? extends Annotation> annotationClass, boolean iterator, String... pkgs) {
         ClassLoader classLoader = ClassScanner.class.getClassLoader();
         try {
             for (String pkg : pkgs) {
@@ -27,9 +27,9 @@ public class ClassScanner {
                     String protocol = url.getProtocol();
                     switch (protocol) {
                         case "file":
-                            return ClassScanner.loadClassInPackageByFile(pkg, url, annotationClass);
+                            return ClassScanner.loadClassInPackageByFile(pkg, iterator, url, annotationClass);
                         case "jar":
-                            return ClassScanner.loadClassInPackageByJar(pkg, url, annotationClass);
+                            return ClassScanner.loadClassInPackageByJar(pkg, iterator, url, annotationClass);
                         default:
                             throw new RuntimeException("不支持的文件扫描协议");
                     }
@@ -41,50 +41,71 @@ public class ClassScanner {
         return Collections.emptyList();
     }
 
+    public static List<Class> findWithAnnotation(Class<? extends Annotation> annotationClass, String... pkgs) {
+        return findWithAnnotation(annotationClass, false, pkgs);
+    }
+
     public static List<Class> forPackage(String... pkgs) {
         return findWithAnnotation(null, pkgs);
     }
 
+    public static List<Class> iteratorPackage(String... pkgs) {
+        return findWithAnnotation(null, true, pkgs);
+    }
 
-    private static List<Class> loadClassInPackageByJar(String pkg, URL url, Class annotationClass) throws Throwable {
+    private static List<Class> loadClassInPackageByJar(String pkg, boolean iterator, URL url, Class annotationClass) throws Throwable {
         JarURLConnection jarURLConnection = (JarURLConnection) url.openConnection();
         Enumeration<JarEntry> entries = jarURLConnection.getJarFile().entries();
         String folder = pkg.replace('.', '/');
         List<Class> list = new ArrayList<>();
+        ClassLoader classLoader = Thread.currentThread().getContextClassLoader();
         while (entries.hasMoreElements()) {
             JarEntry jarEntry = entries.nextElement();
             String name = jarEntry.getName();
-            if (name.startsWith(folder) && name.endsWith(".class")) {
-                Class<?> aClass = Class.forName(pkg + "." + name.substring(name.lastIndexOf("/") + 1, name.indexOf(".")));
-                if (annotationClass != null
-                        && aClass.getAnnotation(annotationClass) == null) {
-                    continue;
-                }
-                list.add(aClass);
+            if (jarEntry.isDirectory()) {
+                continue;
             }
+            if (!name.startsWith(folder) || !name.endsWith(".class")) {
+                continue;
+            }
+            if (!iterator && !name.substring(0, name.lastIndexOf('/')).equals(folder)) {
+                continue;
+            }
+            Class<?> aClass = classLoader.loadClass(name.substring(0, name.indexOf(".")).replace('/', '.'));
+            if (annotationClass != null
+                && aClass.getAnnotation(annotationClass) == null) {
+                continue;
+            }
+            list.add(aClass);
         }
         return list;
     }
 
-    private static List<Class> loadClassInPackageByFile(String pkg, URL url, Class annotationClass) throws Throwable {
+    private static List<Class> loadClassInPackageByFile(String pkg, boolean iterator, URL url, Class annotationClass) throws Throwable {
         File file = new File(url.toURI());
         File[] files = file.listFiles();
-        return loadFiles(pkg, files, annotationClass);
+        return loadFiles(pkg, iterator, files, annotationClass);
     }
 
-    private static List<Class> loadFiles(String pkg, File[] files, Class annotationClass) throws Throwable {
+    private static List<Class> loadFiles(String pkg, boolean iterator, File[] files, Class annotationClass) throws Throwable {
         List<Class> list = new ArrayList<>();
         for (File f : files) {
             String name = f.getName();
             if (name.indexOf(".") == -1) {
                 if (f.isDirectory()) {
-                    loadFiles(pkg + "." + name, f.listFiles(), annotationClass);
+                    if (!iterator) {
+                        continue;
+                    }
+                    List<Class> classes = loadFiles(pkg + "." + name, iterator, f.listFiles(), annotationClass);
+                    if (classes != null && !classes.isEmpty()) {
+                        list.addAll(classes);
+                    }
                 }
                 continue;
             }
             Class<?> aClass = Class.forName(pkg + "." + name.substring(0, name.indexOf(".")));
             if (annotationClass != null
-                    && aClass.getAnnotation(annotationClass) == null) {
+                && aClass.getAnnotation(annotationClass) == null) {
                 continue;
             }
             list.add(aClass);
