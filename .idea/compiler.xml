@@ -10,6 +10,8 @@
         <module name="service-core-spring" />
         <module name="service-starter-spring" />
         <module name="service-support-druid-spring" />
+        <module name="service-support-mybatis-spring" />
+        <module name="service-support-pubsub-spring" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel target="1.8">
